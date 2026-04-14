@@ -1,2 +1,2 @@
-# DPSiMUN
+# DPSIMUN
 DPSI MUN website development
