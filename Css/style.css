@@ -10,7 +10,8 @@
    
     --header-font: 'Libre Baskerville', serif;
     --body-font: 'Montserrat', sans-serif;
-    --size-header: 2.5rem;
+    --size-header: 3.5rem;
+    --text-header: 2rem;
 }
 
 * {margin: 0;padding: 0;}
@@ -93,6 +94,7 @@ nav a:hover {
 .content {
     position: relative;
     z-index: 1;
+    padding: 3rem;
 }
 
 .Hero h1 {
@@ -108,7 +110,7 @@ nav a:hover {
 .Hero p {
     font-family: var(--header-font);
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: var(--text-header);
     color: var(--sage-green);
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
