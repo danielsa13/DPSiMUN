@@ -81,7 +81,6 @@ nav a:hover {
     height: 80vh;
     width: 100%;
     text-align: center;
-    white-space: nowrap;
 }
 
 .background-video {
@@ -96,6 +95,7 @@ nav a:hover {
 
 .content {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: relative;
