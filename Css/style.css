@@ -95,6 +95,9 @@ nav a:hover {
 }
 
 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 1;
     padding: 3rem;
