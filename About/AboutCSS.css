@@ -7,22 +7,15 @@
 }
 
 nav {
-    background-color: var(--deep-forest);
-    display: flex;
+    display: flex;             /* Keeps logo and links on one line */
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 5%;
-    position: fixed; /* Fixes it to the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Makes it full width */
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 100%;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
+    display: flex;             /* Keeps the list items (About, Committees) on one line */
+    flex-direction: row;       /* Forces horizontal alignment */
     gap: 30px;
     list-style: none;
 }
