@@ -10,15 +10,14 @@
    
     --header-font: 'Libre Baskerville', serif;
     --body-font: 'Montserrat', sans-serif;
-    --size-header: 3.5rem;
+    --size-header: 2.5rem;
 }
 
 * {margin: 0;padding: 0;}
 
 html {scroll-behavior: smooth;}
 
-body {font-family: var(--body-font);background-color: var(--off-white);color: var(--rich-black);
-    line-height: 1.7;}
+body {font-family: var(--body-font);background-color: var(--off-white);color: var(--rich-black);}
 
 nav {
     background-color: var(--deep-forest);
@@ -74,7 +73,7 @@ nav a:hover {
     color: white;
     padding: 150px 10%;
     border-bottom: 4px solid var(--sage-green);
-    height: 100vh;
+    height: 80vh;
     text-align: center;
 }
 
