@@ -67,7 +67,6 @@ nav a:hover {
 
 .Hero {
     position: relative;
-    background-color: var(--moss-green);
     display: flex;
     align-items: center;
     justify-content: center;
