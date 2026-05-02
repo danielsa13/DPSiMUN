@@ -65,6 +65,7 @@ nav a:hover {
     color: white;
     padding: 150px 10%;
     border-bottom: 4px solid var(--sage-green);
+    height: 100vh;
 }
 
 .Hero h1 {
