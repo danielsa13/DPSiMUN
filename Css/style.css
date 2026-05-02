@@ -79,6 +79,7 @@ nav a:hover {
     border-bottom: 4px solid var(--sage-green);
     height: 45vh;
     text-align: center;
+    white-space: nowrap;
 }
 
 .background-video {
