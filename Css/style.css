@@ -20,6 +20,7 @@ html {scroll-behavior: smooth;}
 body {font-family: var(--body-font);background-color: var(--off-white);color: var(--rich-black);}
 
 nav {
+    position: absolute;
     background-color: var(--deep-forest);
     display: flex;
     flex-flow: column no-wrap;
