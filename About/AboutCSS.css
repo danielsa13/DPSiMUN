@@ -1,77 +1,68 @@
-/* --- NAVIGATION BAR --- */
+/* --- NAVIGATION OVERRIDES --- */
 nav {
-    background-color: #2F4F3A; /* Solid Dark Forest Green (Not Transparent) */
+    position: fixed; /* Keep it at the top while scrolling */
+    background-color: #2F4F3A; /* Solid Deep Forest Green */
     display: flex;
+    flex-flow: row nowrap; /* Forces logo and links to stay in one line */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    padding: 0.8rem 8%;
     width: 100%;
+    top: 0;
     z-index: 1000;
-    height: 80px; /* Consistent height */
 }
 
-.nav-links {
+/* Forces the menu items (Committees, Prep, etc) to stay horizontal */
+nav li {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px; 
     list-style: none;
-    gap: 40px; /* Space between the main menu items */
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
 }
 
 /* --- THE DROPDOWN LOGIC --- */
 
-/* This makes the 'About' link the anchor point */
-.dropdown {
-    position: relative;
+/* This link is the anchor */
+.aboutdrop {
+    position: relative; /* Changed from absolute to relative to keep it in line with other links */
 }
 
-/* This is the box that appears. 'top: 100%' moves it right under the Nav bar */
-.dropdown-content {
-    display: none; 
+/* This is the black box that appears */
+.aboutcont {
+    display: none;
     position: absolute;
-    top: 100%; 
+    top: 100%; /* Sits right under the 'About' link */
     left: 0;
-    background-color: #0F0F0F; /* Solid Black background as seen in your image */
-    min-width: 250px;
+    min-width: 220px;
+    background-color: #0F0F0F; /* Rich Black background */
     box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
-    z-index: 2000;
+    z-index: 1001;
+    padding: 10px 0;
+    flex-direction: column;
 }
 
-/* This makes the menu show up when you hover over 'About' */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Show the menu on hover */
+.aboutdrop:hover .aboutcont {
+    display: flex;
 }
 
-/* Styling the links inside the dropdown box */
-.dropdown-content a {
-    color: white;
-    padding: 15px 20px;
-    display: block; /* Stacks them vertically */
-    text-transform: uppercase;
-    font-size: 0.8rem;
+/* Styling the links inside the black box */
+.aboutcont a {
+    padding: 12px 20px;
+    text-transform: none; /* Looks better for long titles */
+    font-size: 0.85rem;
     border-bottom: 1px solid #222;
+    width: 100%;
     transition: background 0.3s;
 }
 
-.dropdown-content a:hover {
-    background-color: #2F4F3A; /* Highlights green when you hover on the link */
+.aboutcont a:hover {
+    background-color: #2F4F3A; /* Highlights green when you hover */
 }
 
-/* --- CONTENT SECTION --- */
+/* --- CONTENT SPACING --- */
 .About-Sub {
-    padding: 140px 10% 60px 10%; /* Extra top padding so nav doesn't cover title */
+    padding: 120px 10% 60px 10%; /* Pushes text down so Nav doesn't cover it */
     background-color: #F5F7F5;
 }
