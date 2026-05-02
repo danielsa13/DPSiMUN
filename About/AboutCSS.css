@@ -7,6 +7,10 @@
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
 footer {
     background-color: var(--rich-black);
