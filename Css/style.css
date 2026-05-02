@@ -57,10 +57,17 @@ nav a:hover {
     color: var(--sage-green);
 }
 
+/* .content {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+} */
+
 .Hero {
     background-color: var(--moss-green);
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     color: white;
     padding: 150px 10%;
