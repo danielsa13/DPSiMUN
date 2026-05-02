@@ -59,9 +59,11 @@ nav a:hover {
 
 .Hero {
     background-color: var(--moss-green);
+    display: flex;
+    align-content: center;
+    justify-content: center;
     color: white;
     padding: 150px 10%;
-    text-align: center;
     border-bottom: 4px solid var(--sage-green);
 }
 
