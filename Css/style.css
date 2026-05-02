@@ -82,6 +82,10 @@ nav a:hover {
     padding: 1.5rem;
 }
 
+.aboutcont li {
+    position: relative;
+}
+
 /* .content {
     padding: 1rem;
     display: flex;
