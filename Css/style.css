@@ -103,9 +103,10 @@ h1 {
     color: var(--deep-forest);
     font-size: 2.2rem;
     position: relative;
+    margin-bottom: 15px;
     display: inline-block;
 }
-
+/* 
 h1::after {
     content: '';
     display: block;
@@ -113,7 +114,7 @@ h1::after {
     height: 3px;
     background-color: var(--sage-green);
     margin-top: 10px;
-}
+} */
 
 footer {
     background-color: var(--rich-black);
