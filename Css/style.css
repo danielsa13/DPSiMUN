@@ -22,6 +22,7 @@ body {font-family: var(--body-font);background-color: var(--off-white);color: va
 nav {
     background-color: var(--deep-forest);
     display: flex;
+    flex-flow: column no-wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 8%;
