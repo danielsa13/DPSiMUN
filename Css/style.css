@@ -60,7 +60,7 @@ nav a:hover {
 .content {
     padding: 1rem;
     display: flex;
-    flex-flow: column no-wrap;
+    flex-flow: row no-wrap;
     justify-content: center;
     align-items: center;
 }
