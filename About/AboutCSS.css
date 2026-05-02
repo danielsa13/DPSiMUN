@@ -1,23 +1,24 @@
-/* This part keeps the Logo on the left and Nav on the right */
+/* --- NAVIGATION BAR --- */
 nav {
-    background-color: #2F4F3A; 
+    background-color: #2F4F3A; /* Solid Dark Forest Green (Not Transparent) */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 10px 5%;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
+    height: 80px; /* Consistent height */
 }
 
-/* THIS IS THE FIX: This forces the links to stay in a horizontal row */
 .nav-links {
-    display: flex; /* Makes items go side-by-side */
+    display: flex;
     list-style: none;
+    gap: 40px; /* Space between the main menu items */
     margin: 0;
     padding: 0;
-    gap: 30px; /* Space between About, Committees, etc. */
 }
 
 .nav-links a {
@@ -26,39 +27,51 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
 }
 
-/* THE DROPDOWN FIX: This keeps the sub-links hidden until you hover */
+/* --- THE DROPDOWN LOGIC --- */
+
+/* This makes the 'About' link the anchor point */
 .dropdown {
-    position: relative; /* Anchor for the hidden menu */
+    position: relative;
 }
 
+/* This is the box that appears. 'top: 100%' moves it right under the Nav bar */
 .dropdown-content {
-    display: none; /* HIDES THE MENU */
+    display: none; 
     position: absolute;
-    background-color: #2F4F3A;
-    min-width: 200px;
-    top: 100%; /* Places it right under the link */
+    top: 100%; 
     left: 0;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    background-color: #0F0F0F; /* Solid Black background as seen in your image */
+    min-width: 250px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    z-index: 2000;
 }
 
-/* SHOWS THE MENU ONLY ON HOVER */
+/* This makes the menu show up when you hover over 'About' */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Makes the links inside the dropdown stack vertically */
+/* Styling the links inside the dropdown box */
 .dropdown-content a {
-    display: block;
-    padding: 12px 15px;
-    text-transform: none;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 15px 20px;
+    display: block; /* Stacks them vertically */
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #222;
+    transition: background 0.3s;
 }
 
+.dropdown-content a:hover {
+    background-color: #2F4F3A; /* Highlights green when you hover on the link */
+}
+
+/* --- CONTENT SECTION --- */
 .About-Sub {
-    padding: 120px 10%;
+    padding: 140px 10% 60px 10%; /* Extra top padding so nav doesn't cover title */
     background-color: #F5F7F5;
 }
