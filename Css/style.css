@@ -45,7 +45,7 @@ nav img {
 nav li {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }
 
 nav a {
