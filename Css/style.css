@@ -10,6 +10,7 @@
    
     --header-font: 'Libre Baskerville', serif;
     --body-font: 'Montserrat', sans-serif;
+    --size-header: 3.5rem;
 }
 
 * {margin: 0;padding: 0;}
@@ -79,7 +80,7 @@ nav a:hover {
 
 .Hero h1 {
     font-family: var(--header-font);
-    font-size: 2rem;
+    font-size: var(--size-header);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 15px;
@@ -101,7 +102,6 @@ h1 {
     font-family: var(--header-font);
     color: var(--deep-forest);
     font-size: 2.2rem;
-    margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
 }
