@@ -66,6 +66,7 @@ nav a:hover {
 } */
 
 .Hero {
+    position: relative;
     background-color: var(--moss-green);
     display: flex;
     align-items: center;
@@ -75,6 +76,21 @@ nav a:hover {
     border-bottom: 4px solid var(--sage-green);
     height: 45vh;
     text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
 }
 
 .Hero h1 {
