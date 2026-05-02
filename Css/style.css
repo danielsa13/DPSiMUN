@@ -69,6 +69,10 @@ nav a:hover {
     align-items: center;
 }
 
+.aboutdrop {
+    position: absolute;
+}
+
 .aboutcont {
     display: none;
     position: absolute;
@@ -80,10 +84,6 @@ nav a:hover {
     z-index: 1;
     gap: 10px;
     padding: 1.5rem;
-}
-
-.aboutcont a {
-    position: relative;
 }
 
 /* .content {
