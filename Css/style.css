@@ -18,7 +18,7 @@
 
 html {scroll-behavior: smooth;}
 
-body {font-family: var(--body-font);background-color: var(--off-white);color: var(--rich-black);}
+body {font-family: var(--body-font);background-color: var(--off-white);color: var(--rich-black);box-sizing: border-box;}
 
 nav {
     position: absolute;
