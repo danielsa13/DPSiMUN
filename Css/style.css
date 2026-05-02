@@ -106,7 +106,7 @@ nav a:hover {
     letter-spacing: 2px;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
 .Hero p {
@@ -115,7 +115,7 @@ nav a:hover {
     font-size: var(--text-header);
     color: var(--sage-green);
     font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
 section {
