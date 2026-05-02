@@ -78,6 +78,7 @@ nav a:hover {
     padding: 150px 10%;
     border-bottom: 4px solid var(--sage-green);
     height: 45vh;
+    width: 100vw;
     text-align: center;
     white-space: nowrap;
 }
