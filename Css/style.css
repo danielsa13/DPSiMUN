@@ -72,12 +72,13 @@ nav a:hover {
 .Hero {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
     padding: 150px 10%;
     border-bottom: 4px solid var(--sage-green);
-    height: 45vh;
+    height: 80vh;
     width: 100%;
     text-align: center;
     white-space: nowrap;
