@@ -1,3 +1,11 @@
+:root {
+    --deep-forest: #2F4F3A;
+    --moss-green: #4B6B4A;
+    --sage-green: #8FAF7A;
+    --off-white: #F5F7F5;
+    --rich-black: #0F0F0F;
+}
+
 nav {
     background-color: var(--deep-forest);
     display: flex;
