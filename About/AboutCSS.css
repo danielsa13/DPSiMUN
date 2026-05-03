@@ -62,7 +62,7 @@ body {
 }
 .Hero {
     position: relative; /* Keep the image inside this section */
-    background-image: url('AboutCSS.css') no-repeat;
+    background-image: url('Secretariat1.jpg') no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
