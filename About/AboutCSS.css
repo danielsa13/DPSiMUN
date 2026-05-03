@@ -1,45 +1,30 @@
-/* --- ABOUT SUB-PAGE STYLES --- */
+/* FORCED REMOVAL OF ALL NAVIGATION ELEMENTS */
+nav, 
+.mun-nav, 
+header, 
+.navbar, 
+#navbar {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
+/* Reset page spacing since the nav is gone */
+main, .main-content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- REST OF YOUR SECRETARIAT STYLES --- */
 .About-Sub {
-    padding: 50px 8%;
-    background-color: #F5F7F5; /* Light grey/white from your scheme */
-    color: #0F0F0F; /* Dark text */
-    font-family: 'Montserrat', sans-serif;
+    padding: 60px 10%;
+    background-color: #F5F7F5;
 }
 
 .About-Sub h1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 3rem;
-    color: #2F4F3A; /* Dark green */
-    margin-bottom: 20px;
-}
-
-.About-Sub h3 {
-    font-weight: 600;
-    margin-top: 30px;
-    color: #4B6B4A; /* Lighter green */
-}
-
-.About-Sub p {
-    line-height: 1.8;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-/* --- FOOTER STYLES --- */
-footer {
-    padding: 40px 0;
-    background-color: #0F0F0F;
-    text-align: center;
-}
-
-.footer-social a {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 15px;
-    transition: color 0.3s;
-}
-
-.footer-social a:hover {
-    color: #8FAF7A; /* Muted green highlight */
+    color: #2F4F3A;
+    font-size: 3.5rem;
 }
