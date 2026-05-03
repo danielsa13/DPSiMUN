@@ -1,11 +1,4 @@
 
-nav, .mun-nav, .navbar, #navbar, header, .nav-links, .mun-logo-container {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    pointer-events: none !important;
-}
 
 /* ============================================================
    2. PAGE LAYOUT (Colors from MUN Project Scheme)
