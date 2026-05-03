@@ -1,28 +1,64 @@
-/* Add this to your AboutCss.css */
-
-/* Fix navigation list items so they sit in a row */
-nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+:root {
+    --deep-forest: #2F4F3A;
+    --moss-green: #4B6B4A;
+    --muted-green: #6F8F62;
+    --sage-green: #8FAF7A;
+    --off-white: #F5F7F5;
+    --rich-black: #0F0F0F;
+    --header-font: 'Libre Baskerville', serif;
+    --body-font: 'Montserrat', sans-serif;
+    --size-header: 3.5rem;
 }
 
-/* Ensure the Hero section can hold content and the nav */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--off-white);
+    color: var(--rich-black);
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- HERO SECTION --- */
 .Hero {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--deep-forest); /* Adding color so content is visible */
+    background-color: var(--deep-forest);
     color: white;
-    padding: 150px 10%;
-    border-bottom: 4px solid var(--sage-green);
-    height: 60vh; /* Reduced height for sub-pages */
+    height: 60vh;
     width: 100%;
     text-align: center;
+    border-bottom: 4px solid var(--sage-green);
 }
 
 .secretariat-header h1 {
@@ -31,40 +67,62 @@ nav ul {
     margin-bottom: 1rem;
 }
 
-/* Reset for the dropdown links so they don't look like buttons */
+/* --- CONTENT SECTION --- */
+.Secretariat-Content {
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    max-width: 900px;
+    text-align: center;
+}
+
+.content-container h2 {
+    font-family: var(--header-font);
+    color: var(--deep-forest);
+    margin-bottom: 20px;
+}
+
+/* --- DROPDOWN --- */
+.aboutdrop { position: relative; }
+.aboutdrop:hover .aboutcont { display: flex; flex-direction: column; }
+
+.aboutcont {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    z-index: 10;
+}
+
 .aboutcont a {
-    border: none;
-    padding: 0.5rem;
-    font-size: 14px;
-    display: block;
     color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 10px 0;
+    border: none;
+    text-align: left;
 }
 
-.aboutcont a:hover {
-    background-color: var(--moss-green);
-}
-
+/* --- FOOTER --- */
 footer {
     background-color: var(--rich-black);
     padding: 60px 0;
     text-align: center;
 }
 
-.footer-social {
-    margin-bottom: 20px;
-}
-
 .footer-social a {
     color: var(--off-white);
     font-size: 1.8rem;
     margin: 0 20px;
-    transition: all 0.3s ease;
-    border: none;
+    transition: 0.3s;
 }
 
 .footer-social a:hover {
     color: var(--sage-green);
-    transform: translateY(-5px);
 }
-
-section div {max-width: 900px;}
