@@ -19,96 +19,47 @@ body {
     line-height: 1.6;
 }
 
-/* --- NAVIGATION --- */
 nav {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 8%;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    padding: 20px 8%;
+    background-color: var(--deep-forest); /* Use your forest green variable */
+    color: white;
 }
 
-.nav-links {
+nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px; /* This creates the space between Committees, Prep, etc. */
+    align-items: center;
 }
 
+/* This fixes the links so they don't look like blue underlined text */
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-family: var(--body-font);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    border: none; /* Removes the box around links */
+    padding: 0;
 }
 
-/* --- HERO SECTION --- */
-.Hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--deep-forest);
-    color: white;
-    height: 60vh;
-    width: 100%;
-    text-align: center;
-    border-bottom: 4px solid var(--sage-green);
-}
-
-.secretariat-header h1 {
-    font-family: var(--header-font);
-    font-size: var(--size-header);
-    margin-bottom: 1rem;
-}
-
-/* --- CONTENT SECTION --- */
-.Secretariat-Content {
-    padding: 80px 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.content-container {
-    max-width: 900px;
-    text-align: center;
-}
-
-.content-container h2 {
-    font-family: var(--header-font);
-    color: var(--deep-forest);
-    margin-bottom: 20px;
-}
-
-/* --- DROPDOWN --- */
-.aboutdrop { position: relative; }
-.aboutdrop:hover .aboutcont { display: flex; flex-direction: column; }
-
+/* This hides the dropdown until you hover */
 .aboutcont {
     display: none;
     position: absolute;
-    top: 100%;
-    right: 0;
-    min-width: 200px;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
+    background-color: var(--rich-black);
+    padding: 10px;
     z-index: 10;
 }
 
-.aboutcont a {
-    color: white;
-    font-size: 0.8rem;
-    text-decoration: none;
-    padding: 10px 0;
-    border: none;
-    text-align: left;
+.aboutdrop:hover .aboutcont {
+    display: flex;
+    flex-direction: column;
 }
-
 /* --- FOOTER --- */
 footer {
     background-color: var(--rich-black);
