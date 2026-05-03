@@ -43,3 +43,28 @@ nav ul {
 .aboutcont a:hover {
     background-color: var(--moss-green);
 }
+
+footer {
+    background-color: var(--rich-black);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: var(--off-white);
+    font-size: 1.8rem;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.footer-social a:hover {
+    color: var(--sage-green);
+    transform: translateY(-5px);
+}
+
+section div {max-width: 900px;}
