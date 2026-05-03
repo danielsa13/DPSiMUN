@@ -1,83 +1,80 @@
-/* --- NAVIGATION BAR --- */
-nav {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100% !important;
+/* --- NAVIGATION SYSTEM --- */
+.mun-nav {
+    background-color: #2F4F3A !important;
     height: 80px !important;
-    background-color: #2F4F3A !important; /* Solid Forest Green */
+    width: 100% !important;
     display: flex !important;
-    flex-direction: row !important; /* Side-by-side layout */
-    justify-content: space-between !important; /* Logo left, Links right */
+    flex-direction: row !important;
+    justify-content: space-between !important;
     align-items: center !important;
-    padding: 0 5% !important;
-    z-index: 1000 !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    padding: 0 50px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9999 !important;
+    box-sizing: border-box !important;
 }
 
-/* Logo styling */
-.nav-logo img {
-    height: 60px;
-    width: auto;
-    display: block;
-}
-
-/* Link Container */
-.nav-links {
+.mun-logo-container {
     display: flex !important;
-    flex-direction: row !important; /* Forces horizontal line */
-    gap: 40px !important; /* Spacing between links */
-    list-style: none !important;
+    align-items: center !important;
+}
+
+.nav-logo-img {
+    height: 60px !important;
+    width: auto !important;
+}
+
+.mun-links {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 40px !important;
     margin: 0 !important;
     padding: 0 !important;
+    list-style: none !important;
 }
 
-.nav-links a {
+.mun-links a {
     color: white !important;
     text-decoration: none !important;
-    font-weight: bold;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* --- DROPDOWN LOGIC --- */
-
+/* --- DROPDOWN FIX --- */
 .aboutdrop {
-    position: relative !important; /* Keeps 'ABOUT' in the horizontal flow */
+    position: relative !important; /* Keeps it in the flow of the menu */
 }
 
 .aboutcont {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 100%; /* Appears directly below the nav bar */
-    left: 0;
-    background-color: #0F0F0F; /* Solid Black box */
-    min-width: 220px;
-    flex-direction: column !important; /* Links inside dropdown stack vertically */
-    padding: 10px 0;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
-    z-index: 1100;
+    display: none;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background-color: #0F0F0F !important;
+    min-width: 200px !important;
+    flex-direction: column !important;
+    padding: 10px 0 !important;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5) !important;
 }
 
-/* Show on Hover */
 .aboutdrop:hover .aboutcont {
     display: flex !important;
 }
 
-/* Dropdown Link Styling */
 .aboutcont a {
-    padding: 15px 20px !important;
-    font-size: 0.8rem !important;
-    border-bottom: 1px solid #222;
-    width: 100%;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid #1a1a1a !important;
+    font-size: 12px !important;
 }
 
 .aboutcont a:hover {
-    background-color: #4B6B4A !important; /* Highlight green from your scheme */
+    background-color: #4B6B4A !important;
 }
 
-/* --- CONTENT OFFSET --- */
-/* Add this to your main container so the nav doesn't cover your page content */
-body {
-    padding-top: 80px;
+/* --- LAYOUT ADJUSTMENT --- */
+.main-content {
+    padding-top: 120px !important;
 }
