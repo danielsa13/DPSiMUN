@@ -39,7 +39,6 @@ nav {
 nav ul {
     display: flex;
     gap: 60px;
-    list-style: none;
 }
 
 nav img {
@@ -69,7 +68,7 @@ nav a:hover {
     align-items: center;
 }
 
-.aboutdrop {
+/* .aboutdrop {
     position: relative;
 }
 
@@ -85,7 +84,8 @@ nav a:hover {
     gap: 10px;
     padding: 1.5rem;
     font-size: 30px;
-}
+    text-align: left;
+} */
 
 /* .content {
     padding: 1rem;
