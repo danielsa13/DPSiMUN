@@ -36,6 +36,12 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+nav ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
 nav img {
     height: 60px;
     width: auto;
@@ -70,12 +76,12 @@ nav a:hover {
 }
 
 .aboutdrop {
-    position: absolute;
+    position: relative;
 }
 
 .aboutcont {
     display: none;
-    position: relative;
+    position: absolute;
     top: 100%;
     left: 0;
     min-width: 160px;
@@ -84,6 +90,7 @@ nav a:hover {
     z-index: 1;
     gap: 10px;
     padding: 1.5rem;
+    font-size: 30px;
 }
 
 /* .content {
