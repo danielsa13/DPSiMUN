@@ -17,6 +17,20 @@
 
 html {scroll-behavior: smooth;}
 
+.Hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 150px 10%;
+    border-bottom: 4px solid var(--sage-green);
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+}
+
 body {font-family: var(--body-font);background-color: var(--off-white);color: var(--rich-black);}
 
 a {
