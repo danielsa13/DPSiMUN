@@ -1,29 +1,58 @@
 :root {
+
     --deep-forest: #2F4F3A;
+
     --moss-green: #4B6B4A;
+
     --muted-green: #6F8F62;
+
     --sage-green: #8FAF7A;
+
     --off-white: #F5F7F5;
+
     --rich-black: #0F0F0F;
+
     --header-font: 'Libre Baskerville', serif;
+
     --body-font: 'Montserrat', sans-serif;
+
     --size-header: 3.5rem;
+
 }
+
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
 .background-image {
+
   position: absolute;
+
   top: 0;
+
   left: 0;
+
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
+
   z-index: -1;
+
 }
 
+
+
 body {
+
     font-family: var(--body-font);
+
     background-color: var(--off-white);
+
     color: var(--rich-black);
+
     line-height: 1.6;
+
 }
+
