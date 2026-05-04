@@ -61,11 +61,13 @@ body {
 
 }
 .Hero {
-    position: relative; 
-    /* FIX: Changed background-image to just 'background' to allow the no-repeat value */
-    background: url('Secretariat1.jpg') no-repeat;
-    background-size: cover; /* Ensures the image fills the area */
-    background-position: center; /* Centers the image */
+    position: relative;
+    /* Use the shorthand 'background' to combine the image, positioning, and repeat settings */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Secretariat1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
