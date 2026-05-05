@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 
-.background-video-container {
+iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -140,13 +140,6 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.background-video-container iframe {
-  width: 100vw;
-  height: 100%;
-  object-fit: cover; 
-  pointer-events: none; /* Prevents users from clicking on the video */
 }
 
 .content {
