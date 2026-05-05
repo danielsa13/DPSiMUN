@@ -1,0 +1,105 @@
+:root {
+
+    --deep-forest: #2F4F3A;
+
+    --moss-green: #4B6B4A;
+
+    --muted-green: #6F8F62;
+
+    --sage-green: #8FAF7A;
+
+    --off-white: #F5F7F5;
+
+    --rich-black: #0F0F0F;
+
+    --header-font: 'Libre Baskerville', serif;
+
+    --body-font: 'Montserrat', sans-serif;
+
+    --size-header: 3.5rem;
+
+}
+
+.nav-links {
+    
+    list-style-type: none;
+    
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* .background-image {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -1;
+
+} */
+
+
+
+body {
+
+    font-family: var(--body-font);
+
+    background-color: var(--off-white);
+
+    color: var(--rich-black);
+
+    line-height: 1.6;
+
+}
+.Hero {
+    position: relative;
+    /* Use the shorthand 'background' to combine the image, positioning, and repeat settings */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Secretariat1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+    width: 100%;
+    text-align: center;
+    overflow: hidden; 
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes it fill the space without stretching */
+    z-index: -1; /* Puts it behind the text and nav */
+    /* Optional: Add a dark overlay so text is easier to read */
+    filter: brightness(60%); 
+}
+
+/* Ensure navigation and text stay on top */
+nav, .secretariat-header {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure navigation links are white and readable against the image */
+.nav-links a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: 600;
+}
