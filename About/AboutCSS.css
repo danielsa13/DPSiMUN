@@ -62,12 +62,7 @@ body {
 }
 .Hero {
     position: relative;
-    /* Use the shorthand 'background' to combine the image, positioning, and repeat settings */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Secretariat1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    /* REMOVE the background: url('Secretariat1.jpg') line completely */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +73,6 @@ body {
     overflow: hidden; 
     color: white;
 }
-
 .background-image {
     position: absolute;
     top: 0;
