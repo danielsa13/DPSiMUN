@@ -1,0 +1,23 @@
+.content h1{
+    font-weight: 600;
+}
+
+.Prepcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.res1, .res2, .res3 {
+    padding: 2rem;
+    border-left: 5px solid var(--moss-green);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+}
+
+a {
+    border: none;
+    color: blue;
+}
