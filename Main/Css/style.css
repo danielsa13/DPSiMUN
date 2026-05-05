@@ -127,6 +127,10 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.Hero h1 {
+    color: var(--off-white);
+}
+
 .background-video {
   position: absolute;
   top: 0;
