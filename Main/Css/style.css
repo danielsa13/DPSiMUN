@@ -131,7 +131,8 @@ nav a:hover {
     color: var(--off-white);
 }
 
-.background-video {
+
+.background-video-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,6 +140,13 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
 }
 
 .content {
