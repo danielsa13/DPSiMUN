@@ -71,17 +71,65 @@ nav {
     text-align: center;
 }
 
+/* --- CONTACT CONTENT --- */
+.contact-container {
+    max-width: 900px; /* Slightly narrower for better readability */
+    margin: -60px auto 80px auto; 
+    background: white;
+    padding: 80px 40px; /* Increased padding for more "white space" */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stacks everything vertically */
+    align-items: center;
+    gap: 25px; /* Adds even spacing between h2, p, and the details */
+}
+
 .contact-info h2 {
     font-family: var(--header-font);
     color: var(--deep-forest);
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.contact-info p {
+    max-width: 650px; /* Prevents lines from being too long and "cluttered" */
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8; /* Adds space between lines of text */
+    color: #444;
 }
 
 .contact-details {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    gap: 20px;
+    flex-direction: column; /* Stacks the Email icon/text vertically */
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #eee; /* Adds a subtle divider line */
+    width: 100%;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-item i {
+    font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 15px;
+}
+
+.detail-item h3 {
+    font-family: var(--header-font);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
 }
 
 .detail-item i {
