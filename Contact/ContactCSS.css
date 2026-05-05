@@ -26,7 +26,12 @@ body {
     text-align: center;
     color: white;
 }
-
+.contact-info p {
+    max-width: 800px;
+    margin: 0 auto; /* Centers the text block itself */
+    font-size: 1.05rem;
+    color: #444; /* Slightly softer than pure black */
+}
 nav {
     display: flex;
     justify-content: space-between;
