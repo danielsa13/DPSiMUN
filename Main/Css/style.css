@@ -124,7 +124,7 @@ nav a:hover {
     height: 80vh;
     width: 100%;
     text-align: center;
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .background-video {
