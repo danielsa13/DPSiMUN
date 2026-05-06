@@ -131,10 +131,6 @@ nav a:hover {
     color: var(--off-white);
 }
 
-.theme {
-    font-size: 0.5rem;
-}
-
 iframe {
   position: absolute;
   top: 0;
@@ -173,6 +169,11 @@ iframe {
     font-weight: 400;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.9);
 }
+
+.theme {
+    font-size: 0.5rem;
+}
+
 
 section {
     padding: 100px 15%;
