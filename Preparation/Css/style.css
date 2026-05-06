@@ -21,3 +21,10 @@ a {
     border: none;
     color: blue;
 }
+
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
