@@ -28,3 +28,7 @@ a {
     height: auto;
     top: 0;
 }
+
+.Hero {
+    position: relative;
+}
