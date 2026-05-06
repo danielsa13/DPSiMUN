@@ -149,6 +149,7 @@ iframe {
     position: relative;
     z-index: 1;
     padding: 3rem;
+    white-space: nowrap;
 }
 
 .Hero h1 {
