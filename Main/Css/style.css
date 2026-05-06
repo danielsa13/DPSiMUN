@@ -163,7 +163,6 @@ iframe {
 
 .Hero p {
     font-family: var(--header-font);
-    font-style: italic;
     font-size: var(--text-header);
     color: var(--sage-green);
     font-weight: 400;
@@ -171,7 +170,7 @@ iframe {
 }
 
 .theme {
-    font-size: 0.5rem;
+    font-size: 0.2rem;
 }
 
 
