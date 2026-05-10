@@ -30,9 +30,13 @@ body {
 }
 
 /* --- GLOBAL LINKS --- */
+/* This removes the boxes globally while keeping the transition smooth */
 a {
     text-decoration: none;
     transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+    color: inherit;
 }
 
 /* --- NAVIGATION --- */
@@ -41,11 +45,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 8%;
+    padding: 1.5rem 8%;
     width: 100%;
     top: 0;
     z-index: 1000;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    /* Darker gradient at top to make white links pop */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
 nav ul {
@@ -55,20 +60,20 @@ nav ul {
 }
 
 nav img {
-    height: 50px;
+    height: 55px; /* Slightly larger for visibility */
     width: auto;
 }
 
 nav a {
-    color: white;
-    font-size: 0.8rem;
+    color: white !important; /* Force white text over the video */
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 nav a:hover {
-    color: var(--sage-green);
+    color: var(--sage-green) !important;
 }
 
 /* DROPDOWN */
@@ -79,18 +84,20 @@ nav a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    min-width: 200px;
+    min-width: 220px;
     background-color: rgba(15, 15, 15, 0.95);
-    padding: 1rem;
+    padding: 1.2rem;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 
 .aboutdrop:hover .aboutcont { display: flex; }
 
 .aboutcont a {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     padding: 5px 0;
+    border: none; /* Ensuring no boxes appear here */
 }
 
 /* --- HERO SECTION --- */
@@ -115,7 +122,7 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(50%);
+    filter: brightness(45%); /* Slightly darker for better readability */
 }
 
 .content {
@@ -123,7 +130,6 @@ nav a:hover {
     z-index: 1;
     padding: 0 5%;
     width: 100%;
-    max-width: 1200px;
 }
 
 .Hero h1 {
@@ -133,41 +139,45 @@ nav a:hover {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 15px 0;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
 }
 
 .Hero p {
     font-family: var(--header-font);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--sage-green);
     letter-spacing: 1px;
 }
 
 .theme {
-    font-size: 2rem !important; /* Fixed the 50px cluttering issue */
-    margin-top: 10px;
+    font-size: 2rem !important; 
+    margin-top: 15px;
     display: block;
+    max-width: 900px; /* Prevents text from stretching too wide */
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* THE ONLY BOX: The Register Button */
 .registerbtn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 40px;
-    border: 2px solid var(--sage-green);
-    color: var(--sage-green);
+    margin-top: 40px;
+    padding: 15px 45px;
+    border: 2px solid var(--sage-green) !important;
+    color: var(--sage-green) !important;
     font-weight: 600;
     text-transform: uppercase;
     background: transparent;
 }
 
 .registerbtn:hover {
-    background: var(--sage-green);
-    color: white;
+    background: var(--sage-green) !important;
+    color: white !important;
 }
 
 /* --- CONTENT SECTIONS --- */
 section {
-    padding: 100px 10%;
+    padding: 120px 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,9 +186,8 @@ section {
 
 section h1 {
     font-family: var(--header-font);
-    color: var(--deep-forest);
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
 }
 
 .committee { background-color: var(--muted-green); color: white; }
@@ -187,38 +196,42 @@ section h1 {
 .About { background-color: var(--deep-forest); color: white; }
 .About h1 { color: var(--sage-green); }
 
-.Preparation { background-color: var(--off-white); }
+.Preparation { background-color: var(--off-white); color: var(--rich-black); }
 
 .Registration { background-color: var(--sage-green); color: white; }
 .Registration h1 { color: white; }
 
-/* Buttons inside sections */
+/* Buttons inside lower sections - no boxes until hover */
 section a:not(.registerbtn) {
-    margin-top: 20px;
-    padding: 10px 30px;
+    margin-top: 25px;
+    padding: 12px 35px;
     border: 2px solid currentColor;
     color: inherit;
     font-weight: 600;
+    background: transparent;
 }
 
-section a:hover {
-    opacity: 0.7;
+section a:hover:not(.registerbtn) {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
 }
 
 /* --- FOOTER --- */
 footer {
     background-color: var(--rich-black);
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .footer-social a {
     color: var(--off-white);
-    font-size: 1.8rem;
-    margin: 0 20px;
+    font-size: 2rem;
+    margin: 0 25px;
     border: none;
+    padding: 0;
 }
 
 .footer-social a:hover {
     color: var(--sage-green);
+    transform: scale(1.1);
 }
