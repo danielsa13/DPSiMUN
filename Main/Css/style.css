@@ -126,6 +126,23 @@ nav a:hover {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video fills the screen without stretching */
+    z-index: -1;       /* Puts it behind your text and nav */
+    filter: brightness(60%); /* Makes text easier to read over the video */
+}
+
+/* Ensure the section holding the video is relative */
+.Hero- {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Or whatever height you prefer */
+}
 
 .Hero h1 {
     color: var(--off-white);
