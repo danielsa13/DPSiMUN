@@ -59,17 +59,7 @@ nav img {
     width: auto;
 }
 
-/* FIX: This specific part removes the white boxes from navigation */
-nav a {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
+
 
 nav a:hover {
     color: var(--sage-green);
