@@ -1,0 +1,98 @@
+/* --- VARIABLES & RESET --- */
+:root {
+    --deep-forest: #2F4F3A;
+    --moss-green: #4B6B4A;
+    --muted-green: #6F8F62;
+    --sage-green: #8FAF7A;
+    --off-white: #F5F7F5;
+    --rich-black: #0F0F0F;
+    --header-font: 'Libre Baskerville', serif;
+    --body-font: 'Montserrat', sans-serif;
+    --size-header: 3.5rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--off-white);
+    color: var(--rich-black);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- HERO SECTION --- */
+.Hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+    width: 100%;
+    text-align: center;
+    overflow: hidden; 
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%); /* Darker for better text readability */
+}
+
+/* --- NAVIGATION BOX FIX --- */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* This targets the <ul> inside nav and removes borders/boxes */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: 600;
+    border: none !important; /* Removes the white box */
+    padding: 0 !important;   /* Removes extra space */
+    background: none !important;
+}
+
+/* --- CONTENT STYLING --- */
+.secretariat-header, .content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px; /* Space for absolute nav */
+}
+
+.Hero h1 {
+    font-family: var(--header-font);
+    font-size: var(--size-header);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.Secretariat-Content {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.content-container h2 {
+    font-family: var(--header-font);
+    color: var(--deep-forest);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
