@@ -59,6 +59,7 @@ nav a {
     background: none !important;
     color: white !important;
 }
+
 nav ul {
     display: flex;
     gap: 50px;
@@ -171,7 +172,6 @@ nav a:hover {
 
 /* --- CONTENT SECTIONS --- */
 section {
-    /* padding: 100px 10%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,10 +219,6 @@ section a:not(.registerbtn) {
 
 section a:hover {
     color: var(--sage-green);
-}
-
-nav a {
-    border: none;
 }
 
 /* --- FOOTER --- */
