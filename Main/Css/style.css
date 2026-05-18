@@ -197,8 +197,17 @@ section h1 {
     margin-bottom: 20px;
 }
 
-.committee { background-image: url(/resources/DSC_3372.jpg);background-color: var(--off-white); }
-.committee h1 { color: white; }
+.committee { 
+    background-image: url(/resources/DSC_3372.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+
+.committee h1 { 
+    color: var(--sage-green); 
+}
 
 .About { background-color: var(--deep-forest); color: white; }
 .About h1 { color: var(--sage-green); }
