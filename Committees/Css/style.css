@@ -127,34 +127,33 @@ nav a:hover {
     margin:60px auto;
 }
 
-/* Section headings */
+/* Heading */
 .section h2{
     text-align:center;
     width:100%;
     margin:60px 0 15px;
-    display:block;
 }
 
+/* Divider */
 .section hr{
     width:100%;
     margin:0 auto 40px;
 }
 
-/* Card layout */
+/* GRID FIX */
 .grid{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3, 320px); /* fixed columns like your cards */
+    justify-content:center;               /* THIS centers the whole grid */
     gap:30px;
     margin-bottom:70px;
-    justify-items:center;
 }
 
-/* Same card size */
+/* Cards */
 .card{
     width:320px;
     height:220px;
 }
-
 /* --- FOOTER UNIFICATION --- */
 footer {
     background-color: var(--rich-black);
