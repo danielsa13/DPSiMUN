@@ -121,37 +121,79 @@ nav a:hover {
 }
 
 /* --- COMMITTEES GRID SYSTEM --- */
+
 .section{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
 }
 
+/* Section headings */
 .section h2{
-    text-align:center;
-    margin-top:70px;
-    margin-bottom:10px;
+    text-align: center;
+    font-size: 32px;
+    margin: 70px 0 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .section hr{
-    width:100%;
-    margin-bottom:30px;
+    width: 100%;
+    margin: 0 auto 50px;
+    border: 0;
+    border-top: 1px solid #999;
 }
 
+/* Grid */
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    margin-bottom:50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 70px;
 }
 
+/* Cards */
+.card{
+    height: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Images */
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Committee name */
+.card h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Security Council card */
 .single-card{
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
 }
 
 .single-card .card{
-    width:320px;
+    width: 300px;
+    height: 280px;
 }
 
 /* --- FOOTER UNIFICATION --- */
