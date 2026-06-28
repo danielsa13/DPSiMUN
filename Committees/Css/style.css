@@ -121,42 +121,37 @@ nav a:hover {
 }
 
 /* --- COMMITTEES GRID SYSTEM --- */
-.section {
-    padding: 80px 10%;
+.section{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+.section h2{
+    text-align:center;
+    margin-top:70px;
+    margin-bottom:10px;
 }
 
-.card {
-    height: 220px;
-    background: var(--muted-green);
-    border-radius: 16px;
-    padding: 25px;
-    position: relative;
-    overflow: hidden;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.section hr{
+    width:100%;
+    margin-bottom:30px;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    background: var(--moss-green);
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-bottom:50px;
 }
 
-.card h3 {
-    font-family: var(--header-font);
-    font-size: 1.6rem;
-    text-align: center;
-    letter-spacing: 1px;
+.single-card{
+    display:flex;
+    justify-content:center;
+}
+
+.single-card .card{
+    width:320px;
 }
 
 /* --- FOOTER UNIFICATION --- */
