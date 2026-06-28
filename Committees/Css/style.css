@@ -155,18 +155,6 @@ nav a:hover {
     height:220px;
 }
 
-/* Security Council */
-.single-card{
-    display:flex;
-    justify-content:center;
-    margin-bottom:70px;
-}
-
-.single-card .card{
-    width:320px;
-    height:220px;
-}
-
 /* --- FOOTER UNIFICATION --- */
 footer {
     background-color: var(--rich-black);
