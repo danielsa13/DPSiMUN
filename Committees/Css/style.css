@@ -153,6 +153,7 @@ nav a:hover {
 .card{
     width:320px;
     height:220px;
+    backgroundcolor: #4B6B4A;
 }
 /* --- FOOTER UNIFICATION --- */
 footer {
