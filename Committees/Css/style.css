@@ -153,7 +153,7 @@ nav a:hover {
 .card{
     width:320px;
     height:220px;
-    backgroundcolor: #4B6B4A;
+    background-color: var(--moss-green);
 }
 /* --- FOOTER UNIFICATION --- */
 footer {
