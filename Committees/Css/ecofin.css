@@ -144,6 +144,9 @@ nav a:hover {
     max-width: 1200px;
     margin: 50px auto;
 }
+h3 {
+    margin-left: 10px;
+}
 
 /* shared layout for both chairs */
 .chair1, .chair2 {
