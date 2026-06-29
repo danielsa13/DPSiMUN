@@ -149,6 +149,7 @@ nav a:hover {
 .chair2 img {
     width: 175px;
     height: 200px;
+    border-radius: 15px;
 }
 /* text block */
 .chair-text {
