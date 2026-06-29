@@ -164,6 +164,7 @@ nav a:hover {
     height:220px;           /* Adjust this height as desired */
     object-fit: cover;       /* Crops image to fit without distortion */
     display: block;
+    border-radius: 20px;
 }
 /* --- FOOTER UNIFICATION --- */
 footer {
