@@ -76,9 +76,12 @@ nav a:hover {
 }
 
 /* DROPDOWN SYNC */
-.aboutdrop { position: relative; }
+/* DROPDOWNS SYNC */
+.aboutdrop, .committeedrop { 
+    position: relative; 
+}
 
-.aboutcont {
+.aboutcont, .committeecont {
     display: none;
     position: absolute;
     top: 100%;
@@ -93,14 +96,18 @@ nav a:hover {
     z-index: 1001;
 }
 
-.aboutdrop:hover .aboutcont { display: flex; }
+.aboutdrop:hover .aboutcont,
+.committeedrop:hover .committeecont { 
+    display: flex; 
+}
 
-.aboutcont a {
+.aboutcont a, .committeecont a {
     font-size: 0.75rem !important;
     font-family: var(--body-font);
     padding: 5px 0 !important;
     border: none !important;
     text-transform: none;
+    letter-spacing: normal;
 }
 
 .header-title {
