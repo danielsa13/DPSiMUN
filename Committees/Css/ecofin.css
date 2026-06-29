@@ -156,10 +156,10 @@ nav a:hover {
     flex: 1;
 }
 /* name styling */
-.chair-text h3 {
+.chair-text h4 {
     font-size: 26px;
     margin: 0 0 10px 0;
-    font-family: var(--header-font);
+    font-family: var(--body-font);
 }
 /* paragraph */
 .chairs_cards {
