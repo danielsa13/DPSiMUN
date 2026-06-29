@@ -140,5 +140,23 @@ nav a:hover {
     margin:0 auto 40px;
 }
 
-.footer{
+/* --- FOOTER UNIFICATION --- */
+footer {
+    background-color: var(--rich-black);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-social a {
+    color: var(--off-white);
+    font-size: 1.8rem;
+    margin: 0 20px;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--sage-green);
 }
