@@ -161,9 +161,9 @@ nav a:hover {
 }
 .card img{
     width:100%;
-    height:140px;           /* Adjust this height as desired */
-    object-fit:cover;       /* Crops image to fit without distortion */
-    display:block;
+    height:220px;           /* Adjust this height as desired */
+    object-fit: cover;       /* Crops image to fit without distortion */
+    display: block;
 }
 /* --- FOOTER UNIFICATION --- */
 footer {
