@@ -139,6 +139,44 @@ nav a:hover {
     width:100%;
     margin:0 auto 40px;
 }
+.section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* shared layout for both chairs */
+.chair1, .chair2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* image styling */
+.chair1 img,
+.chair2 img {
+    width: 250px;   /* adjust as needed */
+    height: auto;
+}
+
+/* text block */
+.chairs_cards {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* chair1: image left, text right (default flex row) */
+.chair1 {
+    flex-direction: row;
+}
+
+/* chair2: image right, text left */
+.chair2 {
+    flex-direction: row-reverse;
+}
 
 /* --- FOOTER UNIFICATION --- */
 footer {
