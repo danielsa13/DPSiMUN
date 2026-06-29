@@ -154,6 +154,7 @@ nav a:hover {
     width:320px;
     height:220px;
     background-color: var(--moss-green);
+    padding: 5px;
 }
 /* --- FOOTER UNIFICATION --- */
 footer {
