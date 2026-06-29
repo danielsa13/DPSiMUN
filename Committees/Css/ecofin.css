@@ -131,6 +131,7 @@ nav a:hover {
     text-align: center;
     width: 100%;
     margin: 60px 0 15px;
+    font-family: var(--header-font);
 }
 /* Divider */
 .section hr {
