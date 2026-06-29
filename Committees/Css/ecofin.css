@@ -166,7 +166,11 @@ nav a:hover {
 }
 /* reverse second row */
 .chair2 {
-    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-direction: row;
 }
 
 /* --- FOOTER UNIFICATION --- */
