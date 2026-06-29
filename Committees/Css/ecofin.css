@@ -157,8 +157,8 @@ nav a:hover {
 /* image styling */
 .chair1 img,
 .chair2 img {
-    width: 250px;   /* adjust as needed */
-    height: auto;
+    width: 200px;   /* adjust as needed */
+    height: 150px;
 }
 
 /* text block */
