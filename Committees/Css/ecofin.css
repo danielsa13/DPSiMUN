@@ -188,7 +188,6 @@ footer {
     color: var(--off-white);
     font-size: 1.8rem;
     margin: 0 20px;
-    border: none !important;
     background: none !important;
     padding: 0 !important;
     transition: color 0.3s ease;
