@@ -125,6 +125,7 @@ nav a:hover {
     width:90%;
     max-width:1200px;
     margin:60px auto;
+    font-family: var(--body-font);
 }
 
 /* Heading */
@@ -132,6 +133,7 @@ nav a:hover {
     text-align:center;
     width:100%;
     margin:60px 0 15px;
+    font-family: var(--body-font);
 }
 
 /* Divider */
@@ -158,6 +160,7 @@ nav a:hover {
     border-radius: 20px;
     overflow:hidden;        /* Keeps the image inside the rounded corners */
     cursor:pointer;
+    font-family: var(--body-font);
 }
 .card img{
     width:100%;
