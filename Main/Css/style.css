@@ -168,7 +168,7 @@ nav a:hover {
 .btn {
     display: inline-block;
     margin-top: 30px;
-    padding: 15px 40px;
+    padding: 25px 40px;
     border: 2px solid var(--sage-green);
     border-radius: 10px;
     color: var(--sage-green);
@@ -212,7 +212,7 @@ section h1 {
 }
 
 .committee { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/resources/DSC_3372.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3372.jpg');
     background-size: cover;
     background-position: center;
     color: white; 
@@ -222,12 +222,12 @@ section h1 {
     color: var(--sage-green); 
 }
 
-.About { background-color: var(--deep-forest); color: white; }
+.About { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3353.jpg');; color: white; }
 .About h1 { color: var(--sage-green); }
 
-.Preparation { background-color: var(--off-white); }
+.Preparation { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3558.jpg');; }
 
-.Registration { background-color: var(--sage-green); color: white; }
+.Registration { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3514.jpg');; color: white; }
 .Registration h1 { color: white; }
 
 /* Buttons inside sections */
