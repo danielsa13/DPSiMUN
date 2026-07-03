@@ -219,6 +219,10 @@ section h1 {
     color: white; 
 }
 
+.commcont {
+    filter: brightness(100%);
+}
+
 
 .committee h1 { 
     color: var(--sage-green); 
