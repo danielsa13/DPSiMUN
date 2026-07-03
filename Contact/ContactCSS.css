@@ -34,7 +34,7 @@ body {
     width: 100%;
 }
 
-nav {
+/* nav {
     font-family: var(--header-font);
     position: absolute;
     display: flex;
@@ -73,7 +73,7 @@ nav a {
 
 nav a:hover {
     opacity: 0.7;
-}
+} */
 
 /* DROPDOWNS SYNC */
 .aboutdrop, .committeedrop { 
@@ -107,7 +107,7 @@ nav a:hover {
     border: none !important;
     text-transform: none;
     letter-spacing: normal;
-}
+} 
 
 .header-title {
     position: relative;
