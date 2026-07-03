@@ -180,7 +180,7 @@ nav a:hover {
 .registerbtn:hover {
     background: var(--sage-green);
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
@@ -213,7 +213,7 @@ section h1 {
 
 .committee { 
     background-image: url(/resources/DSC_3372.jpg); 
-    filter: brightness(60%)
+    filter: brightness(60%);
     background-size: cover;
     background-position: center;
     color: white; 
