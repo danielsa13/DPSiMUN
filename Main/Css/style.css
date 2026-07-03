@@ -212,15 +212,10 @@ section h1 {
 }
 
 .committee { 
-    background-image: url(/resources/DSC_3372.jpg); 
-    filter: brightness(60%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/resources/DSC_3372.jpg');
     background-size: cover;
     background-position: center;
     color: white; 
-}
-
-.commcont {
-    filter: brightness(100%);
 }
 
 
