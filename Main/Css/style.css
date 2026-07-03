@@ -46,9 +46,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 8%;
+    padding: 2.6rem 8%;
     width: 100%;
-    top: 10;
+    top: 0;
     z-index: 1000;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
