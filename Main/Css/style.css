@@ -222,13 +222,13 @@ section h1 {
     color: var(--sage-green); 
 }
 
-.About { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3353.jpg'); color: white; object-fit: cover;}
+.About { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3353.jpg'); color: white; background-size: cover;}
 .About h1 { color: var(--sage-green); }
 
-.Preparation { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3558.jpg'); object-fit: cover;}
+.Preparation { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3558.jpg'); background-size: cover;}
 .Preparation h1 { color: var(--moss-green); }
 
-.Registration { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3514.jpg'); color: white; object-fit: cover;}
+.Registration { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3514.jpg'); color: white; background-size: cover;}
 .Registration h1 { color: var(--off-white); }
 
 .About p, .Preparation p, .Registration p { color: white; }
