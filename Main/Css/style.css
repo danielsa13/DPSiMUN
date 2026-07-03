@@ -165,7 +165,7 @@ nav a:hover {
     display: block;
 }
 
-.registerbtn {
+.btn {
     display: inline-block;
     margin-top: 30px;
     padding: 15px 40px;
@@ -177,7 +177,7 @@ nav a:hover {
     background: transparent;
 }
 
-.registerbtn:hover {
+.btn:hover {
     background: var(--sage-green);
     color: white;
     transform: scale(1.1);
