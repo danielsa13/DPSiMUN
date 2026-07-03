@@ -231,7 +231,7 @@ section h1 {
 .Registration { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3514.jpg'); }
 .Registration h1 { color: var(--off-white); }
 
-.About, .Preparation, .Registration { color: white; background-size: cover; box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2); }
+.About, .Preparation, .Registration { color: white; background-size: cover; box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.2); }
 
 /* Buttons inside sections */
 /* section a:not(.registerbtn) {
