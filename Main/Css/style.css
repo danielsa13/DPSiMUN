@@ -170,6 +170,7 @@ nav a:hover {
     margin-top: 30px;
     padding: 15px 40px;
     border: 2px solid var(--sage-green);
+    border-radius: 5%;
     color: var(--sage-green);
     font-weight: 600;
     text-transform: uppercase;
@@ -179,6 +180,8 @@ nav a:hover {
 .registerbtn:hover {
     background: var(--sage-green);
     color: white;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 /* --- CONTENT SECTIONS --- */
@@ -210,6 +213,7 @@ section h1 {
 
 .committee { 
     background-image: url(/resources/DSC_3372.jpg); 
+    opacity: 0.7;
     background-size: cover;
     background-position: center;
     color: white; 
