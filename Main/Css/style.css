@@ -222,16 +222,16 @@ section h1 {
     color: var(--sage-green); 
 }
 
-.About { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3353.jpg'); color: white; background-size: cover;}
+.About { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3353.jpg'); }
 .About h1 { color: var(--sage-green); }
 
-.Preparation { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3558.jpg'); background-size: cover;}
+.Preparation { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3558.jpg'); }
 .Preparation h1 { color: var(--moss-green); }
 
-.Registration { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3514.jpg'); color: white; background-size: cover;}
+.Registration { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/resources/DSC_3514.jpg'); }
 .Registration h1 { color: var(--off-white); }
 
-.About p, .Preparation p, .Registration p { color: white; }
+.About, .Preparation, .Registration { color: white; background-size: cover; box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2); }
 
 /* Buttons inside sections */
 /* section a:not(.registerbtn) {
