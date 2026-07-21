@@ -46,7 +46,7 @@ body {
 }
 
 /* --- NAVIGATION UNIFICATION --- */
-nav {
+/* nav {
     font-family: var(--header-font);
     position: absolute;
     display: flex;
@@ -80,7 +80,7 @@ nav a {
     font-size: 0.85rem;
     font-weight: 600;
     transition: opacity 0.3s ease;
-}
+} */
 
 nav a:hover {
     opacity: 0.7;
