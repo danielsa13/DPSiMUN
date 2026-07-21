@@ -60,7 +60,7 @@ body {
 }
 
 /* --- NAVIGATION UNIFICATION --- */
-nav {
+/* nav {
     font-family: var(--header-font);
     position: absolute;
     display: flex;
@@ -98,7 +98,7 @@ nav a {
 
 nav a:hover {
     opacity: 0.7;
-}
+} */
 
 /* DROPDOWNS SYNC */
 .aboutdrop, .committeedrop { 
