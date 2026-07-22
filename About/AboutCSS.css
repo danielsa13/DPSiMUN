@@ -114,15 +114,11 @@ nav a:hover {
     letter-spacing: normal;
 }
 /* --- CONTENT STYLING --- */
-/* =========================
-   HERO SECTION
-========================= */
 
 .secretariat-header,
 .content{
     position:relative;
     z-index:1;
-    padding-top:60px;
 }
 
 .Hero h1{
