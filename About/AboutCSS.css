@@ -146,6 +146,19 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.department::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #dcdcdc;
+    margin: 40px auto 0;
+}
+
+.department:last-child::after {
+    display: none;
+}
+
 /* --- FOOTER UNIFICATION --- */
 footer {
     background-color: var(--rich-black);
