@@ -180,6 +180,15 @@ nav a:hover {
     color: var(--rich-black);
 }
 
+.gmail-link {
+    color: black;
+    text-decoration: none;
+}
+
+.gmail-link:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 /* --- FOOTER --- */
 footer {
     background-color: var(--rich-black);
