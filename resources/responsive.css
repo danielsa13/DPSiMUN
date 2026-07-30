@@ -1,0 +1,218 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   Shared responsive + mobile navigation styles for the
+   DPSI MUN site. Load this AFTER every other stylesheet
+   on the page so its rules can win the cascade.
+   ========================================================= */
+
+/* --- Hamburger button (injected by nav.js, hidden on desktop) --- */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* --- Dropdown caret (mobile submenu toggle, injected by nav.js) --- */
+.dropdown-caret {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 8px;
+    margin-left: 6px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.dropdown-caret i { transition: transform 0.3s ease; display: block; }
+
+li.submenu-open .dropdown-caret i { transform: rotate(180deg); }
+
+body.nav-lock { overflow: hidden; }
+
+/* Let images and video never overflow their container */
+img, video { max-width: 100%; }
+
+/* =========================================================
+   TABLET / MOBILE  —  900px and below
+   ========================================================= */
+@media (max-width: 900px) {
+
+    nav {
+        padding: 1.1rem 5%;
+        flex-wrap: nowrap;
+    }
+
+    .nav-toggle { display: flex; }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        height: 100dvh;
+        width: min(80vw, 320px);
+        margin: 0;
+        background: rgba(15, 15, 15, 0.97);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 6rem 1.75rem 2rem;
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+        overflow-y: auto;
+        box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4);
+    }
+
+    nav ul.nav-open { transform: translateX(0); }
+
+    nav ul li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 14px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.95rem !important;
+        text-transform: uppercase;
+    }
+
+    .dropdown-caret { display: inline-flex; }
+
+    .aboutcont, .committeecont {
+        display: none;
+        position: static;
+        order: 3;
+        width: 100%;
+        min-width: 0;
+        background: transparent;
+        box-shadow: none;
+        padding: 10px 0 0 12px;
+        gap: 12px;
+    }
+
+    li.submenu-open .aboutcont,
+    li.submenu-open .committeecont {
+        display: flex;
+    }
+
+    .aboutcont a, .committeecont a {
+        font-size: 0.85rem !important;
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+
+    /* --- Type scaling --- */
+    :root { --size-header: 2.4rem; }
+
+    .Hero h1, .content h1, .header h1, .header-title h1, .secretariat-header h1 {
+        white-space: normal !important;
+        line-height: 1.25;
+        letter-spacing: 1.5px !important;
+    }
+
+    .theme { font-size: 1.15rem !important; margin-top: 6px; }
+
+    .Hero p { font-size: 0.95rem; }
+
+    .btn {
+        padding: 16px 26px;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    /* --- Hero sections --- */
+    .Hero, header.Hero-mini {
+        height: auto;
+        min-height: 60vh;
+        padding: 120px 24px 50px;
+    }
+
+    /* --- Generic content sections (home page cards) --- */
+    section {
+        height: auto;
+        min-height: 60vh;
+        padding: 60px 24px;
+    }
+
+    /* --- Committees grid --- */
+    .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .card { width: 100%; max-width: 360px; }
+    .section { margin: 40px auto; }
+    .section h2 { margin: 40px 0 12px; font-size: 1.5rem; }
+
+    /* --- Chair layout --- */
+    .chair1, .chair2 {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+
+    /* --- Contact page --- */
+    .contact-container { margin: -40px 5% 60px; padding: 40px 24px; }
+    .contact-info h2 { font-size: 1.8rem; }
+    .contact-info p { font-size: 1rem; }
+
+    /* --- Preparation page --- */
+    .Prepcont { padding: 50px 6%; }
+    .res1, .res2 { padding: 1.25rem 1.5rem; }
+}
+
+/* =========================================================
+   SMALL PHONES  —  480px and below
+   ========================================================= */
+@media (max-width: 480px) {
+    :root { --size-header: 1.85rem; }
+
+    nav { padding: 1rem 5%; }
+    nav img { height: 38px !important; }
+
+    .Hero, header.Hero-mini {
+        min-height: 52vh;
+        padding: 100px 18px 40px;
+    }
+
+    .theme { font-size: 0.95rem !important; }
+
+    section h1, .section h2 { font-size: 1.6rem; }
+
+    .card, .card img { height: 190px; }
+
+    .chair1 img, .chair2 img { width: 130px; height: 150px; }
+    .chair-text h4 { font-size: 1.2rem; }
+
+    .contact-details { margin-top: 25px; padding-top: 25px; }
+    .detail-item i { font-size: 2rem; }
+}
