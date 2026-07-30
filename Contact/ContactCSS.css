@@ -24,7 +24,7 @@ body {
 /* --- NAVIGATION & HEADER --- */
 .Hero-mini {
     position: relative;
-    background-color: var(--deep-forest);
+    background-color: #3F5F4B;
     display: flex;
     justify-content: center;
     align-items: center;
