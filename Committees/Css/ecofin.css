@@ -47,7 +47,7 @@ body {
 
 /* --- NAVIGATION UNIFICATION --- */
 nav {
-    font-family: var(--header-font);
+    font-family:var(--header-font);
     position: absolute;
     display: flex;
     justify-content: space-between;
