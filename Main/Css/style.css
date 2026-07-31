@@ -144,7 +144,7 @@ nav a:hover {
     padding: 0 5%;
     width: 100%;
     max-width: 1200px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .Hero h1 {
@@ -166,7 +166,6 @@ nav a:hover {
 
 .theme {
     font-size: 1rem !important;
-    margin-top: 20px;
     display: block;
     font-style: italic;
     opacity: 0.9;
@@ -194,7 +193,7 @@ nav a:hover {
 }
 
 .registerbtn {
-    margin: 5px;
+    margin: 10px;
 }
 
 /* --- SECTIONS WITH BACKGROUND IMAGES --- */
