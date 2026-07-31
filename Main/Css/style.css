@@ -6,8 +6,8 @@
     --sage-green: #8FAF7A;
     --off-white: #F5F7F5;
     --rich-black: #0F0F0F;
-    --header-font: 'Libre Baskerville', serif;
-    --body-font: 'Libre Baskerville', serif;
+    --header-font: 'Libre Baskerville', sans-serif;
+    --body-font: sans-serif;
     --size-header: 3.5rem;
     --text-header: 1.8rem;
 }
@@ -23,11 +23,11 @@ html {
 }
 
 header {
-    font-family: var(--header-font);
+    font: var(--header-font);
 }
 
 body {
-    font-family: var(--body-font);
+    font: var(--body-font);
     background-color: var(--off-white);
     color: var(--rich-black);
     overflow-x: hidden;
