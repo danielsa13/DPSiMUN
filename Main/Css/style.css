@@ -10,6 +10,7 @@
     --body-font: sans-serif;
     --size-header: 3.5rem;
     --text-header: 1.8rem;
+    --nav-font: "Montserrat", sans-serif;
 }
 
 * {
@@ -41,7 +42,7 @@ a {
 
 /* --- NAVIGATION --- */
 nav {
-    font-family: var(--body-font);
+    font-family: var(--nav-font);
     position: absolute;
     display: flex;
     justify-content: space-between;
