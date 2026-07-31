@@ -120,7 +120,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     color: white;
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     text-align: center;
     overflow: hidden;
@@ -149,7 +149,8 @@ nav a:hover {
 
 .Hero h1 {
     font-family: var(--header-font);
-    font-size: var(--size-header);
+    white-space: nowrap;
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
