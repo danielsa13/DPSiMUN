@@ -41,7 +41,7 @@ a {
 
 /* --- NAVIGATION --- */
 nav {
-    font-family: var(--header-font);
+    font-family: var(--body-font);
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -139,6 +139,7 @@ nav a:hover {
 
 .content {
     position: relative;
+    font: var(--header-font);
     z-index: 1;
     padding: 0 5%;
     width: 100%;
@@ -190,6 +191,10 @@ nav a:hover {
     color: white;
     transform: scale(1.05);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.registerbtn {
+    margin: 5px;
 }
 
 /* --- SECTIONS WITH BACKGROUND IMAGES --- */
