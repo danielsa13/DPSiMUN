@@ -333,6 +333,69 @@ nav a:hover {
         text-align: left;
     }
 }
+/* --- SPONSORS SECTION --- */
+.Sponsors-Section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 90px auto;
+    padding: 0 5%;
+    text-align: center;
+    height: auto !important; /* Ensures layout never breaks or overlaps */
+}
+
+.sponsors-title {
+    font-family: var(--header-font);
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: var(--deep-forest);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.sponsors-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sponsor-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 25px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    width: 300px;
+    height: 120px;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-color: var(--sage-green);
+}
+
+.sponsor-logo {
+    max-width: 100%;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+/* Mobile responsive scaling */
+@media (max-width: 650px) {
+    .sponsors-grid {
+        gap: 20px;
+    }
+    .sponsor-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
 
 /* --- FEATURE BANNER SECTIONS WITH BACKGROUND IMAGES --- */
 .banner-section {
