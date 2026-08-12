@@ -395,3 +395,14 @@ footer {
 .footer-social a:hover {
     color: var(--sage-green);
 }
+
+/* NUCLEAR FIX FOR OVERSIZED IMAGES */
+.sec-speech-card img,
+.speech-profile-box img {
+    max-width: 200px !important;
+    width: 200px !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
