@@ -120,43 +120,41 @@ body {
     letter-spacing:.5px;
 }
 
-/* --- COMPACT COMPACT SPEECH & FLOAT STYLES --- */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
+/* --- FIXED SECRETARY GENERAL SPEECH CARD (FLEXBOX) --- */
 .sec-speech-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 35px !important;
     background: #fdfdfd;
     border: 1px solid #eaeaea;
     border-radius: 16px;
-    padding: 40px;
-    margin-bottom: 90px;
+    padding: 35px;
+    margin-bottom: 70px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .speech-profile-box {
-    float: left;
-    width: 220px;
-    margin: 0 30px 20px 0;
+    flex: 0 0 200px !important;
+    width: 200px !important;
     text-align: center;
     background: #fff;
-    padding: 12px;
+    padding: 10px;
     border-radius: 12px;
     border: 1px solid #f0f0f0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .sg-speech-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100% !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    display: block !important;
 }
 
 .profile-caption h3 {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #123F78;
     margin-top: 10px;
     font-weight: 700;
@@ -169,6 +167,7 @@ body {
 }
 
 .speech-text {
+    flex: 1 !important;
     color: #333;
     font-size: 0.98rem;
     line-height: 1.8;
@@ -181,31 +180,30 @@ body {
 .theme-quote {
     color: #123F78;
     font-family: var(--header-font);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     background: #f0f4f9;
-    padding: 14px 20px;
+    padding: 12px 18px;
     border-left: 4px solid #123F78;
     border-radius: 4px;
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
 .signature-container {
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 25px;
+    padding-top: 15px;
     border-top: 1px solid #eeeeee;
-    clear: both;
 }
 
 .sg-signature {
-    max-height: 45px;
-    width: auto;
-    margin: 8px 0 6px 0;
-    display: block;
+    max-height: 38px !important;
+    width: auto !important;
+    margin: 8px 0 6px 0 !important;
+    display: block !important;
 }
 
 .sg-title {
     color: #555;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.4;
 }
 
@@ -348,22 +346,21 @@ body {
 }
 
 /* --- RESPONSIVE DESIGN --- */
-@media (max-width:850px){
-    .speech-profile-box {
-        float: none;
-        width: 100%;
-        max-width: 260px;
-        margin: 0 auto 25px auto;
-    }
-}
-
 @media (max-width:768px){
     .Secretariat-Content{
         padding:60px 5%;
     }
     
     .sec-speech-card {
-        padding: 24px;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 20px !important;
+    }
+
+    .speech-profile-box {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 220px !important;
     }
 
     .secretariat-page .member-grid{
