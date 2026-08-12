@@ -333,7 +333,7 @@ nav a:hover {
         text-align: left;
     }
 }
-/* --- SPONSORS SECTION (FULL CARD LOGOS) --- */
+/* --- SPONSORS SECTION (100% SCALED WITH PADDING) --- */
 .Sponsors-Section {
     width: 100%;
     max-width: 1200px;
@@ -356,23 +356,22 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .sponsor-card {
     background: #ffffff;
     border: 1px solid #eaeaea;
-    border-radius: 16px;
-    padding: 0 !important; /* Removes all gap/padding around image */
-    overflow: hidden;      /* Clips logo corners to match rounded card border */
+    border-radius: 12px;
+    padding: 10px 15px; /* Small internal padding buffer */
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
-    width: 320px;
-    height: 180px;
+    width: 280px;  /* Controls card width */
+    height: 130px; /* Controls card height */
 }
 
 .sponsor-card:hover {
@@ -383,15 +382,15 @@ nav a:hover {
 .sponsor-logo {
     width: 100% !important;
     height: 100% !important;
-    object-fit: fill !important; /* Forces logo to completely cover the card with no margin */
+    object-fit: contain !important; /* Scales to fill the padded card cleanly */
     display: block;
 }
 
 @media (max-width: 650px) {
     .sponsor-card {
         width: 100%;
-        max-width: 320px;
-        height: 160px;
+        max-width: 300px;
+        height: 120px;
     }
 }
 /* --- FEATURE BANNER SECTIONS WITH BACKGROUND IMAGES --- */
