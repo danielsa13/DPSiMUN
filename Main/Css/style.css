@@ -192,106 +192,146 @@ nav a:hover {
     margin: 20px 0;
 }
 
-/* --- SECRETARIAT SPEECH CONTENT SECTION --- */
+/* --- SECRETARIAT SPEECH SECTION --- */
 .Secretariat-Content {
     width: 100%;
     max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 20px;
+    margin: 80px auto;
+    padding: 0 5%;
+    background: transparent;
+    box-shadow: none;
+    height: auto !important; /* Overrides global section height */
+}
+
+.Secretariat-Content .content-container {
+    width: 100%;
 }
 
 .section-title {
     font-family: var(--header-font);
-    font-size: 2.2rem;
-    color: #123F78;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.sec-speech-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 35px;
-    background: #ffffff;
-    border: 1px solid #eaeaea;
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-}
-
-.speech-profile-box {
-    flex: 0 0 200px;
-    width: 200px;
-    text-align: center;
-    background: #fff;
-    padding: 12px;
-    border-radius: 12px;
-    border: 1px solid #f0f0f0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-}
-
-.sg-speech-img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-}
-
-.profile-caption h3 {
-    font-size: 0.95rem;
-    color: #123F78;
-    margin-top: 12px;
+    font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+    color: var(--deep-forest) !important; /* Uses your dark green CSS variable */
+    text-align: left;
+    margin-bottom: 35px;
+    line-height: 1.15;
     font-weight: 700;
 }
 
-.profile-caption p {
-    font-size: 0.78rem;
-    color: #666;
-    margin-bottom: 0;
+.speech-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
 }
 
+/* Speech Text (Left) */
 .speech-text {
     flex: 1;
-    color: #333;
-    font-size: 0.98rem;
-    line-height: 1.8;
+    color: #000000 !important; /* Black speech text */
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.75;
     text-align: left;
 }
 
 .speech-text p {
-    margin-bottom: 16px;
+    color: #000000 !important;
+    margin-bottom: 18px;
+    font-family: var(--body-font);
+}
+
+.speech-text a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .theme-quote {
-    color: #123F78;
-    font-family: var(--header-font);
-    font-size: 1.05rem;
-    background: #f0f4f9;
-    padding: 14px 20px;
-    border-left: 4px solid #123F78;
-    border-radius: 4px;
-    margin: 22px 0;
+    color: #000000 !important;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    margin: 20px 0 !important;
 }
 
+/* Signature & Credentials Block */
 .signature-container {
-    margin-top: 30px;
-    padding-top: 18px;
-    border-top: 1px solid #eeeeee;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Right aligned beneath text like reference image */
+    text-align: right;
+}
+
+.sign-off {
+    font-weight: 600;
+    margin-bottom: 10px !important;
+    color: #000000 !important;
 }
 
 .sg-signature {
-    max-height: 42px;
+    max-height: 55px;
     width: auto;
-    margin: 10px 0 6px 0;
+    margin-bottom: 15px;
     display: block;
 }
 
-.sg-title {
-    color: #555;
-    font-size: 0.88rem;
+.sg-details {
+    font-size: 0.85rem;
     line-height: 1.4;
+    color: #000000;
+}
+
+.sg-details p {
+    margin-bottom: 2px !important;
+    color: #000000 !important;
+}
+
+.sg-details .sg-name {
+    font-weight: 700;
+}
+
+.sg-details a {
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+/* Photo Box (Right) */
+.speech-profile-box {
+    flex: 0 0 420px;
+    width: 420px;
+    position: sticky;
+    top: 40px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.sg-speech-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .speech-wrapper {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .speech-profile-box {
+        width: 100%;
+        flex: none;
+        position: static;
+    }
+
+    .signature-container {
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 
 /* --- FEATURE BANNER SECTIONS WITH BACKGROUND IMAGES --- */
