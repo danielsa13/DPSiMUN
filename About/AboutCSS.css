@@ -46,40 +46,6 @@ body {
     filter: brightness(50%);
 }
 
-/* --- NAVIGATION UNIFICATION --- */
-/* nav {
-    font-family:var(--header-font);
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 8%;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-
-nav a {
-    color: white !important;
-    text-decoration: none;
-    font-weight: 600;
-    border: none !important;
-    padding: 0 !important;
-    background: none !important;
-    transition: opacity 0.3s ease;
-}
-
-nav a:hover {
-    opacity: 0.7;
-} */
-
 /* DROPDOWNS SYNC */
 .aboutdrop, .committeedrop { 
     position: relative; 
@@ -115,9 +81,8 @@ nav a:hover {
 }
 
 /* --- CONTENT STYLING --- */
-
 .secretariat-header,
-.content{
+.content {
     position:relative;
     z-index:1;
 }
@@ -137,99 +102,114 @@ nav a:hover {
 }
 
 .Secretariat-Content{
-    padding:100px 8%;
+    padding:80px 8%;
     background:#fff;
 }
+
 .content-container{
-    max-width:1400px;
+    max-width:1200px;
     margin:auto;
 }
+
 .secretariat-page .content-container h2{
     font-family:var(--header-font);
     font-size:3rem;
     color:#123F78;
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:30px;
     letter-spacing:.5px;
 }
-.secretariat-page .content-container > p{
-    max-width:780px;
-    margin:0 auto 90px;
-    text-align:center;
-    color:#666;
-    font-size:1.05rem;
-    line-height:1.8;
+
+/* --- COMPACT COMPACT SPEECH & FLOAT STYLES --- */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-/* --- SECRETARY GENERAL SPEECH & SIGNATURE STYLES --- */
 .sec-speech-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    background: #fcfcfc;
-    border: 1px solid #ebebeb;
-    border-radius: 20px;
-    padding: 50px;
+    background: #fdfdfd;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 40px;
     margin-bottom: 90px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
-.sec-speech-media {
-    width: 100%;
-    max-width: 420px;
+.speech-profile-box {
+    float: left;
+    width: 220px;
+    margin: 0 30px 20px 0;
     text-align: center;
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .sg-speech-img {
     width: 100%;
-    height: 480px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.profile-caption h3 {
+    font-size: 0.95rem;
+    color: #123F78;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.profile-caption p {
+    font-size: 0.75rem;
+    color: #777;
+    margin-bottom: 0 !important;
 }
 
 .speech-text {
-    flex: 1;
     color: #333;
-    font-size: 1.05rem;
-    line-height: 1.85;
+    font-size: 0.98rem;
+    line-height: 1.8;
 }
 
 .speech-text p {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .theme-quote {
     color: #123F78;
     font-family: var(--header-font);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     background: #f0f4f9;
-    padding: 18px 24px;
+    padding: 14px 20px;
     border-left: 4px solid #123F78;
-    border-radius: 6px;
-    margin: 25px 0;
+    border-radius: 4px;
+    margin: 20px 0;
 }
 
 .signature-container {
-    margin-top: 35px;
+    margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid #eeeeee;
+    clear: both;
 }
 
 .sg-signature {
-    max-height: 90px;
+    max-height: 45px;
     width: auto;
-    margin: 12px 0 8px 0;
+    margin: 8px 0 6px 0;
     display: block;
 }
 
 .sg-title {
     color: #555;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
+/* --- TEAM & DEPARTMENTS --- */
 .team-section-header {
     margin-top: 40px;
     text-align: center;
@@ -244,15 +224,16 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* --- DEPARTMENTS & TEAM CARDS --- */
 .secretariat-page .department{
     position:relative;
     margin-bottom:110px;
     padding-bottom:45px;
 }
+
 .secretariat-page .department:last-child{
     margin-bottom:20px;
 }
+
 .secretariat-page .department::after{
     content:"";
     position:absolute;
@@ -270,6 +251,7 @@ nav a:hover {
         transparent
     );
 }
+
 .secretariat-page .department:last-child::after{
     display:none;
 }
@@ -283,6 +265,7 @@ nav a:hover {
     letter-spacing:.4px;
     position:relative;
 }
+
 .secretariat-page .department-title::after{
     content:"";
     display:block;
@@ -292,6 +275,7 @@ nav a:hover {
     border-radius:10px;
     margin:16px auto 0;
 }
+
 .secretariat-page .member-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -307,16 +291,19 @@ nav a:hover {
     box-shadow:0 8px 25px rgba(0,0,0,.05);
     transition:all .35s ease;
 }
+
 .secretariat-page .member-card:hover{
     transform:translateY(-10px);
     box-shadow:0 20px 45px rgba(0,0,0,.12);
 }
+
 .secretariat-page .member-img{
     width:100%;
     height:320px;
     object-fit:cover;
     border-bottom:1px solid #ececec;
 }
+
 .secretariat-page .member-card h4{
     margin-top:24px;
     margin-bottom:10px;
@@ -324,14 +311,13 @@ nav a:hover {
     font-size:1.35rem;
     font-weight:700;
 }
+
 .secretariat-page .member-role{
     margin:0 20px 25px;
     color:#666;
     font-size:1rem;
     line-height:1.6;
 }
-
-/* social media links */
 
 .secretariat-page .social-links{
     display:flex;
@@ -361,35 +347,25 @@ nav a:hover {
     transform:scale(1.08);
 }
 
-@media (min-width: 993px) {
-    .sec-speech-card {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-}
-
-@media (max-width:992px){
-
-    .content-container h2{
-        font-size:2.5rem;
-    }
-    .secretariat-page .department-title{
-        font-size:1.7rem;
-    }
-    .secretariat-page .member-grid{
-        gap:30px;
-    }
-    .sec-speech-card {
-        padding: 30px;
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width:850px){
+    .speech-profile-box {
+        float: none;
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto 25px auto;
     }
 }
 
 @media (max-width:768px){
-
     .Secretariat-Content{
-        padding:80px 6%;
+        padding:60px 5%;
     }
     
+    .sec-speech-card {
+        padding: 24px;
+    }
+
     .secretariat-page .member-grid{
         grid-template-columns:1fr;
     }
@@ -401,12 +377,6 @@ nav a:hover {
     .secretariat-page .member-img{
         height:280px;
     }
-
-    .sg-speech-img {
-        height: auto;
-        max-height: 400px;
-    }
-
 }
 
 /* --- FOOTER UNIFICATION --- */
