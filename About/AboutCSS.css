@@ -1,410 +1,430 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPSI MUN - The Secretariat</title>
+/* --- VARIABLES & RESET --- */
+:root {
+    --deep-forest: #2F4F3A;
+    --moss-green: #4B6B4A;
+    --muted-green: #6F8F62;
+    --sage-green: #8FAF7A;
+    --off-white: #F5F7F5;
+    --rich-black: #0F0F0F;
+    --header-font: 'Libre Baskerville', serif;
+    --body-font: 'Montserrat', sans-serif;
+    --size-header: 3.5rem;
+}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="../Main/Css/style.css"> -->
-    <link rel="stylesheet" href="TheSecretariatCSS.css">
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <link rel="icon" type="image/jpeg" href="../resources/logo.png">
+body {
+    font-family: var(--body-font);
+    background-color: var(--off-white);
+    color: var(--rich-black);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+/* --- HERO SECTION --- */
+.Hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+    width: 100%;
+    text-align: center;
+    overflow: hidden; 
+    color: white;
+}
 
-    <link rel="stylesheet" href="../resources/responsive.css">
-</head>
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
 
-<body class="secretariat-page">
-<main>
+/* --- NAVIGATION UNIFICATION --- */
+/* nav {
+    font-family:var(--header-font);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
 
-<section class="Hero">
-    <img src="Secretariat1.jpg" class="background-image" alt="Secretariat Background">
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
 
-    <nav>
-        <a href="../index.html">
-            <img src="../resources/logo.png" alt="DPSI MUN Logo" height="50">
-        </a>
+nav a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: 600;
+    border: none !important;
+    padding: 0 !important;
+    background: none !important;
+    transition: opacity 0.3s ease;
+}
 
-        <ul>
-            <li class="aboutdrop">
-                <a href="#">ABOUT</a>
-                <div class="aboutcont">
-                    <a href="../About/WhatisDPSMUN.html">WHAT IS DPSI MUN?</a>
-                    <a href="../About/TheSecretariat.html">THE SECRETARIAT</a>
-                    <a href="../About/OurTeam.html">OUR TEAM</a>
-                </div>
-            </li>
+nav a:hover {
+    opacity: 0.7;
+} */
 
-            <li class="committeedrop">
-                <a href="../Committees/Committees.html">COMMITTEES</a>
-                <div class="committeecont">
-                    <a href="../Committees/ecofin.html">ECOFIN</a>
-                    <a href="../Committees/unwomen.html">UN WOMEN</a>
-                    <a href="../Committees/undoc.html">UNODC</a>
-                    <a href="../Committees/sochum.html">SOCHUM</a>
-                    <a href="../Committees/specpol.html">SPECPOL</a>
-                    <a href="../Committees/disec.html">DISEC</a>
-                    <a href="../Committees/cstd.html">CSTD</a>
-                    <a href="../Committees/unep.html">UNEP</a>
-                    <a href="../Committees/au.html">AU</a>
-                    <a href="../Committees/bricks.html">BRICS Plus+</a>
-                    <a href="../Committees/sc.html">SC</a>
-                    <a href="../Committees/fifa.html">FIFA</a>
-                </div>
-            </li>
-            <li><a href="../Preparation/Prep.html">PREPARATION</a></li>
-            <li><a href="https://docs.google.com/forms/d/1z7AVEbVSV6iIKOV0whfxsz6ENcO5Ung_bV0vz_ksiCs/edit?usp=forms_home" target="_blank">REGISTRATION</a></li>
-            <li><a href="../Contact/Contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
+/* DROPDOWNS SYNC */
+.aboutdrop, .committeedrop { 
+    position: relative; 
+}
 
-    <div class="secretariat-header">
-        <h1>The Secretariat</h1>
-        <p>Developing Diplomacy, Inspiring Leadership</p>
-    </div>
-</section>
+.aboutcont, .committeecont {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background-color: rgba(15, 15, 15, 0.95);
+    padding: 1rem;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1001;
+}
+
+.aboutdrop:hover .aboutcont,
+.committeedrop:hover .committeecont { 
+    display: flex; 
+}
+
+.aboutcont a, .committeecont a {
+    font-size: 0.75rem !important;
+    font-family: var(--body-font);
+    padding: 5px 0 !important;
+    border: none !important;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+/* --- CONTENT STYLING --- */
+
+.secretariat-header,
+.content{
+    position:relative;
+    z-index:1;
+}
+
+.Hero h1{
+    font-family:var(--header-font);
+    font-size:var(--size-header);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.5);
+}
+
+.Hero p{
+    font-size:1.2rem;
+    letter-spacing:1px;
+}
+
+.Secretariat-Content{
+    padding:100px 8%;
+    background:#fff;
+}
+.content-container{
+    max-width:1400px;
+    margin:auto;
+}
+.secretariat-page .content-container h2{
+    font-family:var(--header-font);
+    font-size:3rem;
+    color:#123F78;
+    text-align:center;
+    margin-bottom:20px;
+    letter-spacing:.5px;
+}
+.secretariat-page .content-container > p{
+    max-width:780px;
+    margin:0 auto 90px;
+    text-align:center;
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+/* --- SECRETARY GENERAL SPEECH & SIGNATURE STYLES --- */
+.sec-speech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #fcfcfc;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 90px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.sec-speech-media {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.sg-speech-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.speech-text {
+    flex: 1;
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.speech-text p {
+    margin-bottom: 20px;
+}
+
+.theme-quote {
+    color: #123F78;
+    font-family: var(--header-font);
+    font-size: 1.25rem;
+    background: #f0f4f9;
+    padding: 18px 24px;
+    border-left: 4px solid #123F78;
+    border-radius: 6px;
+    margin: 25px 0;
+}
+
+.signature-container {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.sg-signature {
+    max-height: 90px;
+    width: auto;
+    margin: 12px 0 8px 0;
+    display: block;
+}
+
+.sg-title {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.team-section-header {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.team-intro {
+    max-width: 780px;
+    margin: 0 auto 60px;
+    text-align: center;
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* --- DEPARTMENTS & TEAM CARDS --- */
+.secretariat-page .department{
+    position:relative;
+    margin-bottom:110px;
+    padding-bottom:45px;
+}
+.secretariat-page .department:last-child{
+    margin-bottom:20px;
+}
+.secretariat-page .department::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:75%;
+    height:1px;
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(18,63,120,.15),
+        rgba(18,63,120,.45),
+        rgba(18,63,120,.15),
+        transparent
+    );
+}
+.secretariat-page .department:last-child::after{
+    display:none;
+}
+
+.secretariat-page .department-title{
+    text-align:center;
+    color:#123F78;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:55px;
+    letter-spacing:.4px;
+    position:relative;
+}
+.secretariat-page .department-title::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:3px;
+    background:#123F78;
+    border-radius:10px;
+    margin:16px auto 0;
+}
+.secretariat-page .member-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:40px;
+}
+
+.secretariat-page .member-card{    
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:18px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+    transition:all .35s ease;
+}
+.secretariat-page .member-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+.secretariat-page .member-img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-bottom:1px solid #ececec;
+}
+.secretariat-page .member-card h4{
+    margin-top:24px;
+    margin-bottom:10px;
+    color:#123F78;
+    font-size:1.35rem;
+    font-weight:700;
+}
+.secretariat-page .member-role{
+    margin:0 20px 25px;
+    color:#666;
+    font-size:1rem;
+    line-height:1.6;
+}
+
+/* social media links */
+
+.secretariat-page .social-links{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    padding:22px 0;
+    border-top:1px solid #f2f2f2;
+}
+
+.secretariat-page .social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f7f7f7;
+    color:#123F78;
+    text-decoration:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.secretariat-page .social-links a:hover{
+    background:#123F78;
+    color:#fff;
+    transform:scale(1.08);
+}
+
+@media (min-width: 993px) {
+    .sec-speech-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:992px){
+
+    .content-container h2{
+        font-size:2.5rem;
+    }
+    .secretariat-page .department-title{
+        font-size:1.7rem;
+    }
+    .secretariat-page .member-grid{
+        gap:30px;
+    }
+    .sec-speech-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width:768px){
+
+    .Secretariat-Content{
+        padding:80px 6%;
+    }
     
-<section class="Secretariat-Content">
-    <div class="content-container">
-
-        <h2>The Secretariat</h2>
-        
-        <div class="sec-speech-card">
-            <div class="sec-speech-media">
-                <img src="Pic.png" alt="Secretary General - Prasanna Chandankhede" class="sg-speech-img">
-            </div>
-
-            <div class="speech-text">
-                <p>Dear Delegates and Faculty Advisors,</p>
-
-                <p>It is my honor to welcome you to the sixth edition of Delhi Private School Model United Nations (DPSIMUN), taking place from Thursday, September 24th, 2026, to Saturday, September 26th, 2026, in Tema, Ghana. Over the years, DPSIMUN has grown into one of Ghana's most prestigious and anticipated high school Model United Nations conferences, bringing together students who are passionate about diplomacy, leadership, and global affairs.</p>
-
-                <p>My name is Prasanna Chandankhede, a senior at DPS International Ghana, and it is my privilege to serve as your Secretary-General for DPSIMUN 2026.</p>
-
-                <p>To me, Model United Nations is far more than a conference. It is an opportunity to step beyond your everyday school life and into the role of a diplomat, policymaker, or global leader. For three days, you will represent not only your assigned country or delegation but also the values, priorities, and perspectives that shape international decision-making.</p>
-
-                <p>This year, our committees will explore issues that define the world we live in today. From the rapid advancement of AI and the ethical questions it presents, to climate change and environmental sustainability, to emerging security challenges such as the growing militarization, DPSIMUN 2026 aims to inspire meaningful discussion and innovative solutions to problems that demand international cooperation.</p>
-
-                <p>Choosing this year's theme was no easy task. As the Secretariat explored countless ideas, one common thread continued to emerge: instability. From the ongoing conflicts around the world to the unprecedented rise of powerful artificial intelligence systems, our generation is growing up in an era defined by uncertainty and constant disruption.</p>
-
-                <p>With this in mind, we are proud to present the theme of DPSIMUN 2026:</p>
-                
-                <p class="theme-quote"><strong>Radical Resilience: Engineering Stability in an Age of Volatility</strong></p>
-
-                <p>As we count down to September, I look forward to welcoming each and every one of you to DPSIMUN 2026. The Secretariat and Organizing Committee have dedicated countless hours to creating an unforgettable conference, and we are committed to delivering an experience that is intellectually engaging, professionally organized, and truly memorable.</p>
-
-                <p>If you have any questions regarding the conference, please explore the rest of our website or contact us at <a href="mailto:dpsimungh@gmail.com">dpsimungh@gmail.com</a>.</p>
-
-                <p>On behalf of the entire Secretariat, I wish you the very best in your preparations, and I look forward to welcoming you to DPSIMUN 2026.</p>
-
-                <div class="signature-container">
-                    <p>Best Regards,</p>
-                    <img src="Prasanna Signature.png" alt="Prasanna Chandankhede Signature" class="sg-signature">
-                    <p class="sg-title"><strong>Prasanna Chandankhede</strong><br>Secretary-General, DPSIMUN 2026</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="team-section-header">
-            <h2>Meet the Team</h2>
-            <p class="team-intro">
-                Meet the passionate team behind DPSIMUN 2026.
-                Every department plays a vital role in ensuring an exceptional conference experience for all delegates.
-            </p>
-        </div>
-
-        <div class="departments-container">
-
-            <div class="department">
-                <h3 class="department-title">Secretariat</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="Pic.png" alt="Secretary General" class="member-img">
-                        <h4>Prasanna Chandankhede</h4>
-                        <p class="member-role">Secretary General</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:dpsimungh@gmail.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Head of Chairs</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Head of Chairs" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Chairs</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Head of Chairs" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Chairs</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Logistics &amp; Operations</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Head of Logistics &amp; Operations" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Logistics &amp; Operations</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Member of Logistics &amp; Operations" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of Logistics &amp; Operations</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">IT</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Head of IT" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of IT</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Member of IT" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of IT</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Finance &amp; Sponsorship</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Head of Finance &amp; Sponsorship" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Finance &amp; Sponsorship</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Member of Finance &amp; Sponsorship" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of Finance &amp; Sponsorship</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Delegate Affairs</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Head of Delegate Affairs" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Delegate Affairs</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Member of Delegate Affairs" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of Delegate Affairs</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Social Media</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Head of Social Media" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Social Media</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Member of Social Media" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of Social Media</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Social Evening</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Head of Social Evening" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Social Evening</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Member of Social Evening" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of Social Evening</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="department">
-                <h3 class="department-title">Decor</h3>
-
-                <div class="member-grid">
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Head of Decor" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Head of Decor</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="../resources/team-placeholder.jpg" alt="Member of Decor" class="member-img">
-                        <h4>Full Name</h4>
-                        <p class="member-role">Member of Decor</p>
-
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="footer-social">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="mailto:contact@dpsimun.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-    </div>
-</footer>
-
-</main>
-
-</body>
-</html>
+    .secretariat-page .member-grid{
+        grid-template-columns:1fr;
+    }
+
+    .secretariat-page .department{
+        margin-bottom:80px;
+    }
+
+    .secretariat-page .member-img{
+        height:280px;
+    }
+
+    .sg-speech-img {
+        height: auto;
+        max-height: 400px;
+    }
+
+}
+
+/* --- FOOTER UNIFICATION --- */
+footer {
+    background-color: var(--rich-black);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-social a {
+    color: var(--off-white);
+    font-size: 1.8rem;
+    margin: 0 20px;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.footer-social a:hover {
+    color: var(--sage-green);
+}
