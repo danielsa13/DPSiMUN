@@ -299,7 +299,7 @@ nav a:hover {
 .speech-profile-box {
     flex: 0 0 420px;
     width: 420px;
-    position: sticky;
+    position: absolute;
     top: 40px;
     background: transparent;
     border: none;
