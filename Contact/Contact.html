@@ -8,39 +8,39 @@
     <link rel="stylesheet" href="../Main/Css/style.css">
     <link rel="stylesheet" href="ContactCSS.css"> 
     <link rel="icon" type="image/jpeg" href="/resources/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/resources/responsive.css">
 </head>
 
-
 <body>
+    <!-- STANDARD HERO / HEADER -->
     <header class="Hero-mini">
         <nav>
-            <a href='/index.html'><img src="/resources/logo.png" alt="DPSI MUN Logo"></a>
+            <a href="/index.html"><img src="/resources/logo.png" alt="DPSI MUN Logo"></a>
             <ul>
-                <li class='aboutdrop'>
+                <li class="aboutdrop">
                     <a href="#">ABOUT <span class="arrow"></span></a>
-                    <div class='aboutcont'>
-                        <a href='/About/WhatisDPSMUN.html'>WHAT IS DPSI MUN?</a>
-                        <a href='/About/TheSecretariat.html'>THE SECRETARIAT</a>
+                    <div class="aboutcont">
+                        <a href="/About/WhatisDPSMUN.html">WHAT IS DPSI MUN?</a>
+                        <a href="/About/TheSecretariat.html">THE SECRETARIAT</a>
                     </div>
                 </li>
-               <li class='committeedrop'>
+                <li class="committeedrop">
                     <a href="/Committees/Committees.html">COMMITTEES <span class="arrow"></span></a>
-                    <div class='committeecont'>
-                        <a href='/Committees/Pages/ecofin.html'>ECOFIN</a>
-                            <a href='/Committees/Pages/unwomen.html'>UN WOMEN</a>
-                            <a href='/Committees/Pages/unodc.html'>UNODC</a>
-                            <a href='/Committees/Pages/sochum.html'>SOCHUM</a>
-                            <a href='/Committees/Pages/specpol.html'>SPECPOL</a>
-                            <a href='/Committees/Pages/disec.html'>DISEC</a>
-                            <a href='/Committees/Pages/cstd.html'>CSTD</a>
-                            <a href='/Committees/Pages/unep.html'>UNEP</a>
-                            <a href='/Committees/Pages/au.html'>AU</a>
-                            <a href='/Committees/Pages/brics.html'>BRICS Plus+</a>
-                            <a href='/Committees/Pages/sc.html'>SC</a>
-                            <a href='/Committees/Pages/fifa.html'>FIFA</a>
-                            <a href='/Committees/Pages/press.html'>Press Corps</a>
+                    <div class="committeecont">
+                        <a href="/Committees/Pages/ecofin.html">ECOFIN</a>
+                        <a href="/Committees/Pages/unwomen.html">UN WOMEN</a>
+                        <a href="/Committees/Pages/unodc.html">UNODC</a>
+                        <a href="/Committees/Pages/sochum.html">SOCHUM</a>
+                        <a href="/Committees/Pages/specpol.html">SPECPOL</a>
+                        <a href="/Committees/Pages/disec.html">DISEC</a>
+                        <a href="/Committees/Pages/cstd.html">CSTD</a>
+                        <a href="/Committees/Pages/unep.html">UNEP</a>
+                        <a href="/Committees/Pages/au.html">AU</a>
+                        <a href="/Committees/Pages/brics.html">BRICS Plus+</a>
+                        <a href="/Committees/Pages/sc.html">SC</a>
+                        <a href="/Committees/Pages/fifa.html">FIFA</a>
+                        <a href="/Committees/Pages/press.html">Press Corps</a>
                     </div>
                 </li>
                 <li><a href="/Preparation/Prep.html">PREPARATION</a></li>
@@ -53,23 +53,42 @@
         </div>
     </header>
 
-    <main class="contact-container">
-        <section class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>Please do not hesitate to contact us if there are any questions. We are eager to help in any way we can. 
-            For committee related inquiries, please email the committee directors. Their emails can be found in their director 
-            letters and background guides, which will be uploaded over the summer.</p>
-            
-            <div class="contact-details">
-                <div class="detail-item">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <a href="mailto:dpsimungh@gmail.com" class="gmail-link">dpsimungh@gmail.com</p>
+    <!-- MINIMALIST CONTACT SECTION -->
+    <main class="contact-wrapper">
+        <div class="contact-header-text">
+            <span class="subtitle">GET IN TOUCH</span>
+            <h2>We’re here to help you navigate DPSI MUN.</h2>
+            <p>Have questions regarding registration, delegate prep, or event logistics? Reach out to our team below.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- General Inquiries -->
+            <div class="contact-card">
+                <div class="card-icon">
+                    <i class="fa-regular fa-envelope"></i>
                 </div>
+                <h3>General Secretariat</h3>
+                <p>For administrative, registration, and general conference inquiries.</p>
+                <a href="mailto:dpsimungh@gmail.com" class="contact-link">
+                    dpsimungh@gmail.com <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-        </section>
+
+            <!-- Committee Inquiries -->
+            <div class="contact-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>Committee Directors</h3>
+                <p>For specific committee questions, refer to the director contacts in each background guide.</p>
+                <a href="/Committees/Committees.html" class="contact-link">
+                    Explore Committees <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-social">
             <a href="https://www.tiktok.com/@dpsighana" target="_blank" aria-label="Tiktok">
@@ -78,14 +97,12 @@
             <a href="https://www.instagram.com/dpsghana/?hl=en" target="_blank" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            </a>
-            <a href="" target="_blank" aria-label="Email">
+            <a href="mailto:dpsimungh@gmail.com" aria-label="Email">
                 <i class="fa-regular fa-envelope"></i>
             </a>
-
         </div>
     </footer>
+
     <script src="/resources/nav.js" defer></script>
-<script src="resources/nav.js" defer></script>
 </body>
 </html>
