@@ -40,7 +40,7 @@ body {
     width: 100%;
 }
 
-nav {
+/* nav {
     font-family: var(--header-font);
     position: absolute;
     display: flex;
@@ -77,7 +77,7 @@ nav a {
 
 nav a:hover {
     opacity: 0.75;
-}
+} */
 
 /* DROPDOWN SYNC */
 .aboutdrop, .committeedrop { 
