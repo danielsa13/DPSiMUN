@@ -8,7 +8,7 @@
     --rich-black: #0F0F0F;
     --header-font: 'Libre Baskerville', serif;
     --body-font: 'Montserrat', sans-serif;
-    --nav-font: 'Inter', serif;
+    --nav-font: 'Montserrat', serif;
 }
 
 * {
@@ -105,6 +105,22 @@ nav a:hover {
     border: none !important;
     text-transform: none;
     letter-spacing: normal;
+}
+
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  vertical-align: 4px;
+}
+
+nav a:hover .arrow {
+  transform: rotate(-45deg) scaleY(-1) translateY(-2px) translateX(-3px);
 }
 
 /* --- HERO SECTION --- */

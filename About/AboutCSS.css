@@ -109,6 +109,11 @@ body {
 .content-container{
     max-width:1200px;
     margin:auto;
+    width: 70%;
+}
+
+.content-container p, h2{
+    margin-bottom: 20px;
 }
 
 .secretariat-page .content-container h2{
