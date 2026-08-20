@@ -57,7 +57,7 @@ body {
 }
 
 /* --- NAV & DROPDOWNS --- */
-nav {
+/* nav {
     position: absolute;
     top: 0;
     width: 100%;
@@ -91,7 +91,7 @@ nav a {
 
 nav a:hover {
     color: var(--sage-green);
-}
+} */
 
 .aboutdrop, .committeedrop { 
     position: relative; 
@@ -241,7 +241,7 @@ nav a:hover {
 }
 
 /* --- FOOTER --- */
-footer {
+/* footer {
     background-color: var(--rich-black);
     padding: 40px 0;
     text-align: center;
@@ -256,4 +256,4 @@ footer {
 
 .footer-social a:hover {
     color: var(--sage-green);
-}
+} */

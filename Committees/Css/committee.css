@@ -237,7 +237,7 @@ nav a:hover {
 }
 
 /* --- FOOTER --- */
-footer {
+/* footer {
     background-color: var(--rich-black);
     padding: 50px 0;
     text-align: center;
@@ -252,7 +252,7 @@ footer {
 
 .footer-social a:hover {
     color: var(--sage-green);
-}
+} */
 
 .chair-image-container {
     display: flex;
