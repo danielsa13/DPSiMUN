@@ -278,3 +278,44 @@ nav a:hover {
         flex-wrap: wrap;
     }
 }
+
+/* Chair Profile Social Links */
+.chair-socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.chair-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--off-white, #F5F7F5);
+    color: var(--deep-forest, #2F4F3A);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #EAEAEA;
+}
+
+.chair-socials a:hover {
+    background-color: var(--deep-forest, #2F4F3A);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.chair-socials a.linkedin-link:hover {
+    background-color: #0A66C2;
+    color: #ffffff;
+    border-color: #0A66C2;
+}
+
+.chair-socials a.insta-link:hover {
+    background-color: #E1306C;
+    color: #ffffff;
+    border-color: #E1306C;
+}
