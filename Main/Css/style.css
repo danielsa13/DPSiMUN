@@ -417,7 +417,7 @@ nav a:hover .arrow {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 70vh;
+    min-height: 85vh;
     padding: 60px 10%;
     text-align: center;
     color: white;
@@ -452,7 +452,7 @@ nav a:hover .arrow {
 }
 
 .Registration { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../resources/DSC_3514.jpg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../resources/DSC_3525.jpg'); 
 }
 
 /* --- FOOTER --- */
