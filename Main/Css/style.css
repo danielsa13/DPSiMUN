@@ -374,7 +374,13 @@ nav a:hover .arrow {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+@media (max-width:768px){
+    .sponsors-grid {
+        flex-wrap: wrap;
+    }
 }
 
 .sponsor-card {
